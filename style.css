@@ -10,6 +10,42 @@ body{
     padding: 0;
 }
 
+.div2{
+    text-align: center;
+    background-color: #B7410E;
+    padding: 0;
+}
+
+.div3{
+    
+}
+
+.div4{
+
+    border-width: 5px;
+    border-color: #808000;
+    border-style: solid;
+    border-radius: 60px;
+    margin: auto;
+    margin-top: 1%;
+    padding: 2%;
+    width: 60%;
+}
+
+.div-img{
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    display: inline;
+    margin:0 ;
+    padding: 0;
+    width: 25%;  
+}
+
+
+
 .logo{
     padding: 1% 0;;
     display: block;
@@ -34,39 +70,30 @@ h1{
     padding-bottom: 0;
 }
 
-
-
-.div2{
-    text-align: center;
-    background-color: #B7410E;
-    padding: 0.25% 0 0.25% 0;
-}
-
-.div3{
+.list{
+    margin: 0;
     
-}
-
-#fst{
-    margin-right:%;
-}
-
-#login{
-    margin-left: 68.9%;
+    padding: 0;
 }
 
 .btn{
     display: inline-block;
     list-style: none;
-    margin: 0 0.5%;
+    margin: 0.75% 0.5%;
     
 }
 
-.list{
+.btn:hover{
+    animation-fill-mode: both;
+    background-color: #B7410E;
+    color: #ffffff;
+    transition: 200ms;
+    transform: scale(1.2);
     
+
 }
 
 .link{
-    
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -88,39 +115,16 @@ h1{
     
 }
 
-#login{
-    justify-content: end;
-}
-
-.btn:hover{
-    animation-fill-mode: both;
-    background-color: #B7410E;
-    color: #ffffff;
-    transition: 200ms;
-    transform: scale(1.2);
-    
-
-}
-
-.div4{
-
-    border-width: 5px;
-    border-color: #808000;
-    border-style: solid;
-    border-radius: 60px;
-    margin: auto;
-    margin-top: 1%;
-    padding: 2%;
-    width: 60%;
-}
-
-.para14{
+.para1{  
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    color: #0C0C0C;
-
+    text-align: center;
+    color: #B7410E;
+    font-size: 180%;
+    margin: 0;
+    padding: 2%;
 }
 
 .para13{  
@@ -135,32 +139,17 @@ h1{
     padding: 6.4% 0;  
 }
 
-.para1{  
+.para14{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    text-align: center;
-    color: #B7410E;
-    font-size: 180%;
-    margin: 0;
-    padding: 2%;
-}
-.div-img{
-    margin: 0;
-    padding: 0;
+    color: #0C0C0C;
+
 }
 
-.img{
-    display: inline;
-    margin:0 ;
-    padding: 0;
-    width: 25%;
-    
 
 
-  
-}
 
 
 
