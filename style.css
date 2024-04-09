@@ -11,16 +11,31 @@ body{
 }
 
 .div2{
-    text-align: center;
+    overflow: hidden;
     background-color: #B7410E;
-    padding: 0;
+    justify-content: center;
+    padding: auto;
 }
+
+.src-frm{
+    display: inline-block;   
+}
+
+.src-inp{
+    border-width: 0;
+    border-style: solid;
+    border-color: #B7410E;
+    border-radius: 5px;
+    padding: 2% 0;
+}
+
 
 .div3{
-    
+    float: right;
+    margin: 1%;
 }
 
-.div4{
+.div5{
 
     border-width: 5px;
     border-color: #808000;
@@ -58,6 +73,7 @@ body{
 }
 
 
+
 h1{ 
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -71,15 +87,16 @@ h1{
 }
 
 .list{
-    margin: 0;
     
+    display: inline;
     padding: 0;
+    margin: 0;
 }
 
 .btn{
     display: inline-block;
     list-style: none;
-    margin: 0.75% 0.5%;
+    margin: 1% 0 0.5% 0.5%;
     
 }
 
@@ -89,8 +106,10 @@ h1{
     color: #ffffff;
     transition: 200ms;
     transform: scale(1.2);
-    
+}
 
+.btn.active{
+    background-color: #ffffff;
 }
 
 .link{
@@ -114,6 +133,8 @@ h1{
     vertical-align: middle;
     
 }
+
+
 
 .para1{  
     font-family: "Nunito", sans-serif;
@@ -148,10 +169,79 @@ h1{
 
 }
 
+.footer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #B7410E;
+}
 
+.ftdiv1{
+    margin: 2%;
+    padding: 0;
+    width: auto;
+    
+}
 
+.ftdiv2{
+    margin: 2%;
+    padding: 0;
+    width: auto;
 
+}
 
+.ftdiv3{
+    margin: 2%;
+    padding: 0;
+    width: auto;
+}
+
+.ftdiv4{
+    margin: 2%;
+    padding: 0;
+    width: auto;
+}
+
+.sub-btn{
+    border: #B7410E solid 2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #B7410E;
+}
+
+.ftlist{
+    margin: 0;
+    padding: 0;
+
+}
+
+.ftlink{
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 112.6%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: #ffffff;
+    width: 6%;
+    
+    cursor: pointer;
+    transition: 0.2s all;  
+    border-width: 2px;
+    
+    vertical-align: middle;
+
+}
+
+.news{
+    border-width: 0;
+    border-style: solid;
+    border-color: #B7410E;
+    border-radius: 5px;
+}
 
 
 
