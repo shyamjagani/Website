@@ -42,15 +42,15 @@ body{
 .src-inp{
     font-size: medium;
     border-color: #DBCBBD;
-    border-width: 1%;
+    border-width: 0.125vw;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 1%;
     background-color: transparent;
-    padding-left: 16%;
-    width: 100%;
-    height: 27.5px;
+    padding-left: 1.75rem;
+    width: 13vw;
+    height: 4vh;
     color: #DBCBBD;
     outline: none;
     overflow: hidden;
@@ -60,7 +60,7 @@ body{
 /* the properties of div with the search bar */
 .div3{
     float: right;
-    margin: 1% 2% 1% 0;
+    margin: 0.75rem 3em 0.75rem 3rem;
 }
 
 /* the div with the looping video */
@@ -69,7 +69,8 @@ body{
     overflow: hidden;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
     background-color: transparent;  
-    margin-bottom: 1%;
+    margin-bottom: 1rem;
+    height: 93.1vh;
 }
 
 /* the container with the news about  the charity */
@@ -79,7 +80,7 @@ body{
     display: grid;
     margin: auto;
     justify-content: space-evenly;
-    margin: 1% 4%;
+    margin: 1rem 4rem;
 
 }
 
@@ -90,19 +91,21 @@ body{
  
 /* the properties of the div surrouding the inner containers */
 .div5p{
-    margin: 2% 8%;
-    border-radius: 20px;
+    margin: 2rem 8rem;
+    border-radius: 1rem;
     background-color: #290001;
-    padding: 0.1%;
+    padding: 0.1rem;
+    height: 94vh;
     
     
 }
 
 .div5i{
-    margin: 2% 8%;
-    border-radius: 20px;
+    margin: 2rem 8rem;
+    border-radius: 1rem;
     background-color: transparent;
-    padding: 0.1%;
+    padding: 0.1rem;
+    
     
 }
 
@@ -112,47 +115,59 @@ body{
 	grid-template-rows: 1fr;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 0;
-	height: 20vw;
+	height: 50vh;
     justify-content: space-evenly;
     
 }
 
 .img-i{
-    height: 20vw;
+    height: 37vh;
     display: inline;
-    margin: 1vw 5vw ;
+    margin: 1rem 5rem ;
     padding: 0;
     width: 20vw;
+}
+
+.h3i{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    color: #87431D;  
+}
+
+span{
+    position: absolute
 }
 
 #i1{
     grid-area: 1/1/2/2;
 	background-color: transparent;
+    z-index: -1;
 }
 
 #i2{
     grid-area: 1/2/2/3;
 	background-color: transparent;
+    z-index: -1;
 }
 
 #i3{
     grid-area: 1/3/2/4;
 	background-color: transparent;
+    z-index: -1;
 }
+
 
 /* the properties of the h1 element that labels the divs  */
 
 
-.head2p{
-     
-    
+.head2p{   
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
     color: #DBCBBD;
-    margin-top: 2%;
-    font-size: 250%;
+    margin-top: 1rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 0;
 
@@ -165,19 +180,19 @@ body{
     font-style: normal;
     color: #290001;
     margin-top: 2%;
-    font-size: 250%;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 0;
 }
 
 /* the properties of the image tag in the divs */
 .img-p1{
-    border-radius: 20px;
-    height: 25rem;
+    border-radius: 1rem;
+    height: 37vh;
     display: inline;
     margin: 0 ;
     padding: 0;
-    width: 70%; 
+    width: 40vw; 
 }
 
 
@@ -187,11 +202,10 @@ body{
 }
 
 /* the first div within div5 under projects section */
-.div5p1{
-    
+.div5p1{   
     display: flex;
     text-align: center;
-    margin: 2%;
+    margin: 2rem;
 }
 
 #g1{
@@ -214,13 +228,25 @@ body{
 
 /* the properties of h1 tag in the different divs */
 
-.h3p1{
-
+.h3p{
     font-family: "Nunito", sans-serif;
-    width: 100%;
-    margin: 2%;
-    font-size: x-large;
+    width: 50vw;
+    margin: 0 1rem 0 1rem 0;
+    font-size: 1.25rem;
     color: #DBCBBD;
+}
+
+.h2p1, .h2p2{
+    padding: 0;
+    margin: 0;
+}
+
+.h2p1{
+    margin-top: 1rem;
+}
+
+.h2p2{
+    margin-top: 2rem;
 }
 
 /* properties of the images within the image tag */
@@ -233,19 +259,19 @@ body{
 /* properties of the image  */
 
 .img{
-    border-radius: 20px;
-    height: 19vw;
+    border-radius: 1rem;
+    height: 35vh;
     display: inline;
     margin: 0 ;
     padding: 0;
-    width: 29vw;  
+    width: 28vw;  
 }
 
 /* the properties of the background videos */
 .video1{ 
     position: absolute;
     z-index: -1;
-    width: 100%;
+    width: 100vw;
     
 }
 
@@ -353,9 +379,9 @@ properties when hohvered over the logo button
     font-style: normal;
     text-align: center;
     color: #290001;
-    font-size: xx-large;
+    font-size: 2rem;
     margin: 0;
-    padding: 2%;
+    padding: 1.5rem;
 }
 
 /* The property of "Welcome to CozyHomes" title */
