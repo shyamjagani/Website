@@ -1,93 +1,268 @@
+/* colours: old #B7410E, #EDF6F9, #83C5BE, #006D77. 
+   colours: new #290001, #C87941, #87431D, #DBCBBD*/
 
+/* body element to indicate the colour and margin of the tag */
 body{
-    background-color: #EDF6F9;
+    background-color: #DBCBBD;
     margin: 0;
-}
-
-
-.div1{
-    background-color: #EDF6F9;
-    padding: 0;
-}
-
-.div2{
-    overflow: hidden;
-    background-color: #B7410E;
-    justify-content: center;
-    padding: auto;
-}
-
-.src-frm{
-    display: inline-block;   
-}
-
-.src-inp{
-    border-width: 0;
-    border-style: solid;
-    border-color: #B7410E;
-    border-radius: 5px;
-    padding: 2% 0;
-}
-
-
-.div3{
-    float: right;
-    margin: 1%;
-}
-
-.div5{
-
-    border-width: 5px;
-    border-color: #808000;
-    border-style: solid;
-    border-radius: 60px;
-    margin: auto;
-    margin-top: 1%;
-    padding: 2%;
-    width: 60%;
-}
-
-.div-img{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
-}
-
-.img{
-    display: inline;
-    margin:0 ;
-    padding: 0;
-    width: 25%;  
-}
-
-
-
-.logo{
-    padding: 1% 0;;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    height: 25%;
-
     
 }
 
 
+/* The navigation bar styles */
+.div2{
+    border-color: #DBCBBD;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #87431D;
+    justify-content: center;
+    padding: auto;
+    z-index: 1000;
+}
 
-h1{ 
+
+/* the search form styles */
+.src-frm{
+    display: inline-block; 
+    
+}
+
+/* the colour of the plaeholder in the search bar */
+.src-inp::placeholder{
+    color: #FFD4C2;
+}
+
+/* what the placeholder does on hover */
+.src-inp::placeholder:hover{
+    color: #FFD4C2;
+}
+
+/* the styles of the input box */
+.src-inp{
+    font-size: medium;
+    border-color: #DBCBBD;
+    border-width: 1%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1%;
+    background-color: transparent;
+    padding-left: 16%;
+    width: 100%;
+    height: 27.5px;
+    color: #DBCBBD;
+    outline: none;
+    overflow: hidden;
+}
+
+
+/* the properties of div with the search bar */
+.div3{
+    float: right;
+    margin: 1% 2% 1% 0;
+}
+
+/* the div with the looping video */
+.div4{ 
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    background-color: transparent;  
+    margin-bottom: 1%;
+}
+
+/* the container with the news about  the charity */
+.div5{
+    grid-template-rows: 1fr;
+	grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    margin: auto;
+    justify-content: space-evenly;
+    margin: 1% 4%;
+
+}
+
+/* the div with the photo and the sentence */
+.div5n1, .div5e1{
+    text-align: center;
+}
+ 
+/* the properties of the div surrouding the inner containers */
+.div5p{
+    margin: 2% 8%;
+    border-radius: 20px;
+    background-color: #290001;
+    padding: 0.1%;
+    
+    
+}
+
+.div5i{
+    margin: 2% 8%;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 0.1%;
+    
+}
+
+.div5i1{
+    background-color: transparent;
+    display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0;
+	height: 20vw;
+    justify-content: space-evenly;
+    
+}
+
+.img-i{
+    height: 20vw;
+    display: inline;
+    margin: 1vw 5vw ;
+    padding: 0;
+    width: 20vw;
+}
+
+#i1{
+    grid-area: 1/1/2/2;
+	background-color: transparent;
+}
+
+#i2{
+    grid-area: 1/2/2/3;
+	background-color: transparent;
+}
+
+#i3{
+    grid-area: 1/3/2/4;
+	background-color: transparent;
+}
+
+/* the properties of the h1 element that labels the divs  */
+
+
+.head2p{
+     
+    
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    color: #808000;
-    margin: 0;
+    color: #DBCBBD;
+    margin-top: 2%;
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 0;
+
+}
+
+.head2i{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: #290001;
+    margin-top: 2%;
     font-size: 250%;
     text-align: center;
     padding-bottom: 0;
 }
 
+/* the properties of the image tag in the divs */
+.img-p1{
+    border-radius: 20px;
+    height: 25rem;
+    display: inline;
+    margin: 0 ;
+    padding: 0;
+    width: 70%; 
+}
+
+
+
+.fundpro-div{
+    background: ;
+}
+
+/* the first div within div5 under projects section */
+.div5p1{
+    
+    display: flex;
+    text-align: center;
+    margin: 2%;
+}
+
+#g1{
+    grid-area: 1/1/2/2;
+}
+
+#g2{
+    grid-area: 1/2/2/3;
+}
+
+#g3{
+    grid-area: 1/3/2/4;
+}
+.div5i1{
+    
+    display: flex;
+    text-align: center;
+    margin: 2%;
+}
+
+/* the properties of h1 tag in the different divs */
+
+.h3p1{
+
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    margin: 2%;
+    font-size: x-large;
+    color: #DBCBBD;
+}
+
+/* properties of the images within the image tag */
+.newsimg{
+    width: 100vw;
+    margin: 0;
+    padding: 0;  
+}
+
+/* properties of the image  */
+
+.img{
+    border-radius: 20px;
+    height: 19vw;
+    display: inline;
+    margin: 0 ;
+    padding: 0;
+    width: 29vw;  
+}
+
+/* the properties of the background videos */
+.video1{ 
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    
+}
+
+/* the properties of the head 2 element */
+.head2{ 
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: #87431D;
+    margin: 2%;
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+/* lists used in the navbar */
 .list{
     
     display: inline;
@@ -95,6 +270,37 @@ h1{
     margin: 0 0 0 2%;
 }
 
+/* properties that make up the logo button */
+.logobtn{
+    padding: 0;
+    margin: 0;
+    width: 2.5%;
+    outline: none;
+    cursor: pointer;
+    display: inline;
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+}
+ 
+/* property image in the button */
+.btnimg{
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+properties when hohvered over the logo button
+.logobtn:hover{
+    animation-fill-mode: both;
+    background-color: #E29578;
+    color: #DBCBBD;
+    transition: 200ms;
+    transform: scale(1.2);
+
+}
+
+/* property of any image */
 .btn{
     display: inline-block;
     list-style: none;
@@ -102,18 +308,21 @@ h1{
     
 }
 
+/* property of any button when hovered */
 .btn:hover{
     animation-fill-mode: both;
     background-color: #E29578;
-    color: #ffffff;
+    color: #DBCBBD;
     transition: 200ms;
     transform: scale(1.2);
 }
 
+/* property of any button when active */
 .btn.active{
-    background-color: #ffffff;
+    background-color: #DBCBBD;
 }
 
+/* property of the link element that decides the visual representation for the viewer */
 .link{
     text-decoration: none;
     padding: 0;
@@ -124,60 +333,72 @@ h1{
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    color: #ffffff;
+    color: #DBCBBD;
     width: 6%;
-    background-color: #B7410E;
+    background-color: #87431D;
     cursor: pointer;
     transition: 0.2s all;  
     border-width: 2px;
-    border-color: #B7410E;
+    border-color: #87431D;
     border-style: solid;
     vertical-align: middle;
     
 }
 
-
-
+/* the last line of the website to address the audience  */
 .para1{  
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
     text-align: center;
-    color: #B7410E;
-    font-size: 180%;
+    color: #290001;
+    font-size: xx-large;
     margin: 0;
     padding: 2%;
 }
 
+/* The property of "Welcome to CozyHomes" title */
 .para13{  
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-size: 280%;
+    font-style: normal;
+    text-align: center;
+    color: #DBCBBD  ;
+    
+    margin: 0;
+    padding: 3% 0;  
+}
+
+/* the css properties of the paragraph that comes after the welcome sign */
+.para131{  
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
     text-align: center;
-    color: #B7410E;
+    color: #DBCBBD;
     font-size: 180%;
     margin: 0;
-    padding: 6.4% 0;  
+    padding: 3% 0;  
 }
 
-.para14{
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    color: #0C0C0C;
-
-}
-
+/* and the property the name of the div that holds the links at the end. */
 .footer{
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: #B7410E;
+    background-color: #87431D;
 }
 
+.newsh3{
+    color: #87431D;
+    font-size: x-large;
+    font-family: "Nunito", sans-serif;
+}
+
+/* the properties of the first div in the footer */
 .ftdiv1{
     margin: 2%;
     padding: 0;
@@ -185,6 +406,7 @@ h1{
     
 }
 
+/* the properties of the second div in the footer */
 .ftdiv2{
     margin: 2%;
     padding: 0;
@@ -192,31 +414,35 @@ h1{
 
 }
 
+/* the properties of the third div in the footer */
 .ftdiv3{
     margin: 2%;
     padding: 0;
     width: auto;
 }
-
+/* ]the properties of the fourth div in the footer */
 .ftdiv4{
     margin: 2%;
     padding: 0;
     width: auto;
 }
 
+/* the subscribe button properties */
 .sub-btn{
-    border: #B7410E solid 2px;
+    border: #87431D solid 2px;
     border-radius: 5px;
     background-color: #ffffff;
-    color: #B7410E;
+    color: #87431D;
 }
 
+/* the properties for the lists in the footer */
 .ftlist{
     margin: 0;
     padding: 0;
 
 }
 
+/* the properties for the links in the footer */
 .ftlink{
     display: inline;
     list-style-type: none;
@@ -229,21 +455,15 @@ h1{
     font-style: normal;
     color: #ffffff;
     width: 6%;
-    
     cursor: pointer;
     transition: 0.2s all;  
     border-width: 2px;
-    
     vertical-align: middle;
 
 }
 
-.news{
-    border-width: 0;
-    border-style: solid;
-    border-color: #B7410E;
-    border-radius: 5px;
-}
+
+
 
 
 

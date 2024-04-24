@@ -1,13 +1,24 @@
+<!-- document declaration for web browsers -->
+
 <!DOCTYPE html>
 
+    <!-- start of the html code -->
     <html lang="en" dir="ltr">
+
+    <!-- start of the head tag -->
     <head>
 
 
-
+        <!-- Title of the Index page -->
         <title>CozyHomes</title>
-        <link rel="icon" href="Images/cozyhomes-favicon-black.png">
+
+        <!-- link to the favicon icon -->
+        <link rel="icon" href="Images/ciricn1.png">
+
+        <!-- link to the css file -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- links to the fonts used throughout the website -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
@@ -20,32 +31,38 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fjalla+One&family=Rock+Salt&display=swap" rel="stylesheet">
 
 
     </head>
+    <!-- end of the head tag -->
 
+    <!-- start of the body tag -->
     <body>
 
-            
-            <div class="div1">
-                <img class="logo" src="Images/logo2.png" alt="CozyHomes!">
-                
-            </div>
-
+            <!-- this div contains all the elements for the navigation bar -->
             <div class="div2">
                 
-
+                <!-- Created a list to store all the buttons of the navigation bar. -->
                 <ul class="list">
-                    <li class="btn"><a class="link" href="donate.html" target="_blank">Donate</a></li>
-                    <li class="btn"><a class="link" href="aboutus.html" target="_blank">About us</a></li>
-                    <li class="btn"><a class="link" href="contactus.html" target="_blank">Contact us</a></li>
-                    <li class="btn"><a class="link" href="joinus.html" target="_blank">Join us</a></li>
-                    <li class="btn"><a class="link" href="login.html" target="_blank">Login</a></li>
-                    
+
+                    <!-- all of the links and anchor tags used. -->
+                    <a href="#"><button class="logobtn" onclick=""><img class="btnimg" src="Images/logobtn.png" alt="CozyHomes"></button></a>
+                    <li class="btn"><a class="link" href="donate.html">Donate</a></li>
+                    <li class="btn"><a class="link" href="aboutus.html">About us</a></li>
+                    <li class="btn"><a class="link" href="contactus.html">Contact us</a></li>
+                    <li class="btn"><a class="link" href="joinus.html">Join us</a></li>
+                    <li class="btn"><a class="link" href="login.html">Login</a></li>
+
                 </ul>
+
+                <!-- created another div for the search bar in the nav pane. -->
                 <div class="div3">
-                    <form class="src-frm" action="">
-                        <input type="search" class="src-inp" name="src" placeholder="Search...">
+                    <form class="src-frm" action="index.html">
+                        <span class="material-symbols-outlined" style="position: absolute; font-size: larger; padding: 0.28%; color: #FFD4C2;">search</span><input type="search" class="src-inp" name="src" placeholder="Search...">
                     </form>
                 
                 </div>
@@ -53,45 +70,103 @@
 
 
             
-
+            <!-- this is the div for a video playing in the background of the "Welcome to Cozyhomes" sign. -->
             <div class="div4">
-                
-                <p class="para13">Hi, welcome to Make it Cozy!.<br> We are a non-profit that focuses on making sure that every person has a cloth to wear.
-                <br>Our goal is to get clothes to as many people as we can.</p>
+
+                <!-- the link for the video as well as the attributes that make it play in a loop. -->
+                <video autoplay muted loop class="video1">
+                    <source src="Images/webvid1.mp4">
+                </video>
+
+                <!-- welcoming the audience. -->
+                 <p class="para13">
+                    Welcome to CozyHomes!
+                </p>
+
+                <!-- introduction to the charity. -->
+                <p class="para131">
+                    We are a non-profit organization that focuses on making sure that every person has all the furnishing essentials.
+                        <br>Our goal is to get furniture to as many people as we can.
+                </p>
             </div>
 
-            <div class="div-img">
-                <img src="Images/sofa1.jpeg" alt="picture of a house." class="img">
-                <img src="Images/bed1.jpeg" alt="picture of a house." class="img">
-                <img src="Images/cupboard1.jpeg" alt="picture of a house." class="img">
-            </div>
-
+            <!-- other information about the website including the news section, the projects section and the impact section.  -->
+            <h1 class="head2">Latest News</h1>
             <div class="div5">
-                <h1>What we do.</h2>
-                    <p class="para14">
-                    Furniture charities collect donated furniture from individuals, businesses, and organizations.
-                    These donations can include items like sofas, beds, tables, chairs, and more.
-                    Reuse and Recycling:
-                    By accepting donated furniture, these charities promote reuse and reduce waste.
-                    They ensure that furniture items are kept in use for longer, minimizing the environmental impact.
-                    Fundraising:
-                    Furniture donations are sold in charity shops or stores.
-                    The proceeds from these sales help raise much-needed funds for the charity’s work.
-                    Supporting Causes:
-                    Furniture charities often support various causes, such as medical research, poverty alleviation, or community development.
-                    By donating furniture, individuals contribute indirectly to these causes.
-                    Assisting Those in Need:
-                    Some furniture charities provide furniture to individuals or families who cannot afford it.
-                    This helps create a comfortable living environment for those facing financial challenges.
-                    Promoting Sustainability:
-                    By encouraging furniture reuse, these charities contribute to environmental sustainability.
-                    They extend the lifespan of furniture, reducing the need for new production.
-                    </p>
+                
+                    <!-- using a combination of photos and paragraphs throughout the div and the sections -->
+                    <div class="div5n1" id="g1">
+                        <img src="Images/pdfurniture.png" alt="animated picture of people moving furniture." class="img">
+                        <h3 class="newsh3">CozyHomes donated more than 100 items</h3>
+                    </div>
+                    <div class="div5n1" id="g2">
+                        <img src="Images/cupboard1.1.jpeg" alt="picture of a cupboard" class="img">
+                        <h3 class="newsh3">Launching a brand new refurbishing factory</h3>
+                    </div>
+                    <div class="div5n1" id="g3">
+                        <img src="Images/ninty.jpeg" alt="picture of 90%." class="img">
+                        <h3 class="newsh3">We just received a satisfaction rating of 90%</h3>
+                    </div>
+                    
             </div>
-            <p class="para1">We believe that every house deserves to be called a home.</p>
+
+
+            <!-- other information about the website including the news section, the projects section and the impact section.  -->
+            <div class="div5p">
+                <h1 class="head2p">Our Projects</h1>
+                
+                    <!-- using a combination of photos and paragraphs throughout the div and the sections -->
+                    <div class="div5p1">
+                        <img src="Images/project-1.jpg" alt="image of used furnture" class="img-p1">
+                            <div class="h3p1">
+                                <h2>Collection-time!</h2>
+                                <h3>CozyHomes team put out flyers at every house in the neighbourhood to ask them to put out their unwanted furniture
+                                to be collected by the team. We collected and donated more than 25 pieces of furniture as a part of this project.</h3>
+                            </div>
+                        </div>
+                        <div class="div5p1">
+                            <div class="h3p1">
+                                <h2>Fundrasier</h2>
+                                <h3>Fundraiser held by Cozyhomes to promote about donating furniture and 
+                                spreading awareness about how much impact good household environment can have on people's lives.</h3>
+                            </div>
+                            
+                            <img src="Images/project-2.jpg" alt="picture fundraiser event." class="img-p1">
+                        </div>
+                    </div>
+
+            </div>
+
             
+            <div class="div5i">
+                <h1 class="head2i">Our Impact</h1>
+                    
+                    <div class="div5i1">
+                        <div id="i1">
+                            
+                        <img src="Images/impact-1-modified.png" alt="image of furniture" class="img-i" >
+                        </div>  
+                        
+                        <div id="i2">
+                            <img src="Images/impact-2-modified.png" alt="image of furniture" class="img-i" >
+                        </div> 
+
+                        <div id="i3">
+                            <img src="Images/impact-3-modified.png" alt="image of furniture" class="img-i" >
+                        </div> 
+                    </div>
+            </div>
+        
+            <!-- the last line of the page that tells the audience about our mottos. -->
+            <b><p class="para1">We believe that every house deserves to be called a home.</p></b>
+            
+            <!-- This section marks the start of the footer. -->
             <div class="footer">
 
+
+                <!-- lists have been used here as well to maintain a sense of uniformity -->
+
+                <!-- links are yet to be added to the lists -->
                 <div class="ftdiv1">
                     <ul class="ftlist">
                         <li class="ftlink">Legal</li><br>
@@ -124,10 +199,14 @@
                 </div>
                 <div class="ftdiv4">
                     
+                    <!-- form used to get users information to subsrcibe to our newsletter -->
                     <form action="" class="news-frm">
                         <input type="text" class="news" name="email" placeholder="Your Email">
-                        <input type="submit" class="sub-btn" name="submit">
+                        <button type="submit" class="sub-btn" name="submit">Submit</button>
+                        add javascript to the email section also put a map to locate your charity.
+
                     </form>
+
 
                 </div>
                 
@@ -135,5 +214,7 @@
             </div>
 
     </body>
+    <!-- End of the Body tag -->
 
 </html>
+<!-- end of the html page -->
