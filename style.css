@@ -80,8 +80,8 @@ body{
     width: 10vw;
     font-family: "Nunito", sans-serif;
     text-decoration: none;
-    color: var(--color3);
-    background-color: var(--color1);
+    color: var(--color1);
+    background-color: var(--color3);
     border-radius: 1rem;
     padding: 1rem 2rem;
     font-size: 2.5rem;
@@ -89,8 +89,8 @@ body{
 
 .donbtn:hover{
     transition: 200ms;
-    background-color: var(--color3);
-    color: var(--color1);
+    background-color: var(--color1);
+    color: var(--color3);
 }
 
 /* the container with the news about  the charity */
