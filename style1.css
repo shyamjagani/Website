@@ -1,8 +1,27 @@
+:root{
+    --color1: #DBCBBD;
+    --color2: #C87941;
+    --color3: #87431D;
+    --color4: #290001;
+    --hoverclr: #E29578;
+}
+
+.heads{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 280%;
+    color: var(--color4);
+    margin-top: 0;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 0;
+}
+
 .abtdiv{
     text-align: center;
     margin: 2rem 8rem;
     border-radius: 1rem;
-    background-color: #290001;   
+    background-color: var(--color4);   
     padding: 2rem 4rem 2rem 4rem;
 }
 
@@ -10,7 +29,7 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #290001;
+    color: var(--color4);
     font-size: 1.5rem;
     padding: 0;
     padding: 0 4rem;
@@ -20,7 +39,7 @@
     align-self: center;
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
-    color: #DBCBBD;
+    color: var(--color1);
 }
 
 .link1{
@@ -32,24 +51,144 @@
     margin: 0;
 }
 
-.dntfrmdiv{
+.donate1{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
 
-.dntfrm{
+.donate-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+table{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 1rem;
+}
+
+.row1{
     
 }
 
-.mnyfrm {
-    
+.col1{
+    padding: 1.5rem;
 }
 
-.mnyfrmdiv{
-
+.col2{
+    padding: 1.5rem;
 }
 
-
-.radbtn input[type="radio"]{
+input[type="radio"]{
     display: none;
+}
+
+/* .radbtn{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    width: 5vw;
+    border: var(--color4) solid 0.2rem;
+    position: relative;
+}
+
+.radbtn span{
+    
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    bottom: 0;
+}
+.radbtn input[type="radio"]:checked ~ span {
+    background-color: var(--color4);
+    border: var(--color4) solid 0.2rem;
+    color: var(--color1);
+ 
+}
+ .radbtn:hover{
+    background-color: var(--hoverclr);
+    color: var(--color4);
+    border: var(--color3) solid 0.2rem;
+    cursor: pointer;
+} */
+
+/*
+.radbtn:active input[type="radio"]{
+    background-color: var(--color4);
+    color: var(--color1);
+    cursor: default;
+} */
+
+.dntinp{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 90%;
+    color: var(--color4);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    padding: 0.4rem;
+    border: none;
+    background-color: var(--color1);
+}
+
+.label{
+    color: var(--color1);
+}
+
+#oth{
+    width: 58%;
+}
+
+.mbtn{
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--color4);
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: rem;
+    border: none;
+    width: 3vw;
+    background-color: var(--color1);
+}
+
+.mbtn:hover{
+    color: var(--color1);
+    background-color: var(--color4);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.pay{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--color4);
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 0.4rem;
+    width: 1vw;
+    border: none;
+    width: 30%;
+    background-color: var(--color1);  
+}
+
+.pay:hover{
+    color: var(--color1);
+    background-color: var(--color4);
+    transition: 0.3s;
+    cursor: pointer;
 }

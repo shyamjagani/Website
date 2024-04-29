@@ -11,6 +11,7 @@
 
         <!-- link to the css file -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
 
         <!-- links to the fonts used throughout the website -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,32 +62,57 @@
                 
         <div class="donate1" style="height: 100vh; text-align: center;">   
             
-            <h1 class="head2i">Donate</h1>
+            <h1 class="heads">Donate</h1>
 
-            <div class="dntfrmdiv">
-                <form class="dntfrm" action="post">
-                    <input type="text" class="fstnme" name="firstname" placeholder="First Name"><br>
-                    <input type="text" class="lstnme" name="lastname" placeholder="Last Name"><br>
-                    <input type="email" class="email" name="email" placeholder="E-mail"><br>
-                </form>
-            </div>
+            <div class="donate-form">
 
-            <div class="mnyfrmdiv">
-                <form class="mnyfrm" action="post">
-                    
-                    <label for="rad"><input type="radio" class="radbtn" name="amount" placeholder="5" value="child" id="rad" >£5</label>
+                <table style="background-color: var(--color3); border-radius: 1.5rem;">
+                    <form class="dntfrm" action="post">
+                        <tr>  
+                            <td class="label" colspan="2">Enter your first name:</td>  
+                            <td class="col1" colspan="2"><input type="text" class="dntinp" name="firstname" placeholder="First Name"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" colspan="2">Enter your last name:</td>
+                            <td class="col1" colspan="2"><input type="text" class="dntinp" name="lastname" placeholder="Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" colspan="2">Enter your email:</td>
+                            <td class="col1" colspan="2"><input type="email" class="dntinp" name="email" placeholder="E-mail"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" colspan="4">Quick Donate!</td>
+                        </tr>
+                        <tr class="row1">
+                            <td class="col1">
+                                <button class="mbtn">£10</button>
+                                    <!-- <label class="radbtn"> 
+                                        <input type="radio" name="amount">£10
+                                        <span>£10</span>
+                                    </label> -->
+                            </td>   
+                            <td class="col1">
+                                    <button class="mbtn">£20</button>
+                            </td>
+                            <td class="col1">
+                                <button class="mbtn">£30</button>
+                            </td>
+                            <td class="col1">
+                                <button class="mbtn">£40</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label" colspan="4">Enter The Amount</td>
+                        </tr>
+                        <tr>
+                            <td class="col2" colspan="4">
+                            <input type="number" class="dntinp" id="oth" placeholder="Other Amount">
+                            <button class="pay" type="submit">Pay Now</button></td>
+                        </tr>
 
-                    <input type="radio" class="radbtn" name="amount" placeholder="5" value="child" id="rad" >
-                    <label for="rad">£10</label>
+                        
 
-                    <input type="radio" class="radbtn" name="amount" placeholder="5" value="child" id="rad" style="color: #290001;" >
-                    <label for="rad">£15</label>
-
-                    <input type="radio" class="radbtn" name="amount" placeholder="5" value="child" id="rad" style="color: #290001;" >
-                    <label for="rad">£20</label>
-
-                    <input type="radio" class="radbtn" name="amount" placeholder="5" value="child" id="rad" style="color: #290001;" >
-                    <label for="rad">Other Amount</label>
+                    </table>
                 </form>
             </div>
             
