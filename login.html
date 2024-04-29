@@ -6,8 +6,13 @@
 
 
         <title>Login</title>
-        <link rel="icon" href="Images/cozyhomes-favicon-black.png">
+        <!-- link to the favicon icon -->
+        <link rel="icon" href="Images/ciricn1.png">
+
+        <!-- link to the css file -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- links to the fonts used throughout the website -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
@@ -20,22 +25,43 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
-        <style>
-        h1{
-            color: #006D77;
-            margin-top: 1%;
-        }   
-        </style>
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fjalla+One&family=Rock+Salt&display=swap" rel="stylesheet">
 
     </head>
     <body>
+
+        <!-- this div contains all the elements for the navigation bar -->
+        <div class="div2">
+                
+            <!-- Created a list to store all the buttons of the navigation bar. -->
+            <ul class="list">
+
+                <!-- all of the links and anchor tags used. -->
+                <a class="logobtn" href="index.html"><img class="btnimg" src="Images/logobtn.png" alt="CozyHomes"></button></a>
+                <li class="btn"><a class="link" href="donate.html">Donate</a></li>
+                <li class="btn"><a class="link" href="aboutus.html">About us</a></li>
+                <li class="btn"><a class="link" href="contactus.html">Contact us</a></li>
+                <li class="btn"><a class="link" href="joinus.html">Join us</a></li>
+                <li class="btn"><a class="link" href="login.html">Login</a></li>
+
+            </ul>
+
+            <!-- created another div for the search bar in the nav pane. -->
+            <div class="div3">
+                <form class="src-frm" action="index.html">
+                    <span class="material-symbols-outlined" style="position: absolute; font-size: larger; padding: 0.4rem 0.3rem 0.1rem 0.2rem; color: #DBCBBD;">search</span><input type="search" class="src-inp" name="src" placeholder="Search...">
+                </form>
+            
+            </div>
+        </div>
         
 
             </div>
 
-                <h1>Login</h1>
+                <h1 class="head2i">Login</h1>
             <div class=""></div>    
                 
             
@@ -43,7 +69,70 @@
 
 
 
-        
+            <div class="footer">
+
+                <div class="subft1">
+                <!-- lists have been used here as well to maintain a sense of uniformity -->
+
+                <!-- links are yet to be added to the lists -->
+                    <div class="ftdiv1">
+                        <ul class="ftlist">
+                            <li class="ftlink2">Legal</li><br>
+                            <br>
+                            <li class="ftlink">Terms of Service</li><br>
+                            <li class="ftlink">Privacy Policy</li><br>
+                            <li class="ftlink">Help</li><br>
+
+                        </ul>
+                    </div>
+
+                    <div class="ftdiv2">
+                        <ul class="ftlist"> 
+                            <li class="ftlink2">Support</li><br>
+                            <br>
+                            <li class="ftlink">Volunteer</li><br>
+                            <li class="ftlink">Donate</li><br>
+                            <li class="ftlink">Careers</li><br>
+                        </ul>
+                    </div>
+
+                    <div class="ftdiv3">
+                        <ul class="ftlist">
+                            <li class="ftlink2">Social</li><br><br>
+                            
+                            <li class="ftlink">Instagram</li><br>
+                            <li class="ftlink">Facebook</li><br>
+                            <li class="ftlink">X(Twitter)</li><br>
+                            
+
+                        </ul>
+                    </div>
+                    <div class="ftdiv4">
+                        
+                        <!-- form used to get users information to subsrcibe to our newsletter -->
+                        <h4 class="clh4">Sign Up for our Newsletter!</h4>
+                        <form action="" class="news-frm">
+                            <input type="text" class="news" name="email" placeholder="Enter your email">
+                            <button type="submit" class="sub-btn" name="submit">Submit</button>
+
+                            
+                        </form>
+
+                        
+                    </div>
+
+                
+                    <img src="Images/logobtn.png" alt="" class="ftlogo">
+                    
+                
+            </div>
+
+            <div class="copyright">
+               
+            <p class="end">© 2024 CozyHomes. All rights Reserved.</p> <p class="end" id="end2">Charity Registration Number: 27042024</p>
+
+            </div>
+
 
     </body>
     </html>

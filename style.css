@@ -4,10 +4,8 @@
 /* body element to indicate the colour and margin of the tag */
 body{
     background-color: #DBCBBD;
-    margin: 0;
-    
+    margin: 0;   
 }
-
 
 /* The navigation bar styles */
 .div2{
@@ -21,11 +19,9 @@ body{
     z-index: 1000;
 }
 
-
 /* the search form styles */
 .src-frm{
-    display: inline-block; 
-    
+    display: inline-block;   
 }
 
 /* the colour of the plaeholder in the search bar */
@@ -51,11 +47,10 @@ body{
     padding-left: 1.75rem;
     width: 13vw;
     height: 4vh;
-    color: #DBCBBD;
+    color: rgb(219, 203, 189);
     outline: none;
     overflow: hidden;
 }
-
 
 /* the properties of div with the search bar */
 .div3{
@@ -70,7 +65,25 @@ body{
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
     background-color: transparent;  
     margin-bottom: 1rem;
-    height: 93.1vh;
+    height: 93.1vh;  
+}
+
+.donbtn{
+    margin: 0 45vw 0 43.5vw;
+    width: 10vw;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    color: #87431D;
+    background-color: #DBCBBD;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+}
+
+.donbtn:hover{
+    transition: 200ms;
+    background-color: #87431D;
+    color: #DBCBBD;
 }
 
 /* the container with the news about  the charity */
@@ -95,18 +108,14 @@ body{
     border-radius: 1rem;
     background-color: #290001;
     padding: 0.1rem;
-    height: 94vh;
-    
-    
+    height: 94vh;    
 }
 
 .div5i{
     margin: 2rem 8rem;
     border-radius: 1rem;
     background-color: transparent;
-    padding: 0.1rem;
-    
-    
+    padding: 0.1rem;  
 }
 
 .div5i1{
@@ -117,7 +126,6 @@ body{
 	gap: 0;
 	height: 50vh;
     justify-content: space-evenly;
-    
 }
 
 .img-i{
@@ -156,10 +164,7 @@ span{
     z-index: -1;
 }
 
-
 /* the properties of the h1 element that labels the divs  */
-
-
 .head2p{   
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -170,7 +175,6 @@ span{
     font-size: 2.5rem;
     text-align: center;
     padding-bottom: 0;
-
 }
 
 .head2i{
@@ -195,12 +199,6 @@ span{
     width: 40vw; 
 }
 
-
-
-.fundpro-div{
-    background: ;
-}
-
 /* the first div within div5 under projects section */
 .div5p1{   
     display: flex;
@@ -219,8 +217,9 @@ span{
 #g3{
     grid-area: 1/3/2/4;
 }
+
 .div5i1{
-    
+    flex-direction: row;
     display: flex;
     text-align: center;
     margin: 2%;
@@ -257,7 +256,6 @@ span{
 }
 
 /* properties of the image  */
-
 .img{
     border-radius: 1rem;
     height: 35vh;
@@ -290,7 +288,7 @@ span{
 
 /* lists used in the navbar */
 .list{
-    
+    text-decoration: none;
     display: inline;
     padding: 0;
     margin: 0 0 0 2%;
@@ -311,27 +309,24 @@ span{
  
 /* property image in the button */
 .btnimg{
-    width: 100%;
+    border-radius: 0.7rem;
+    width: 2vw;
     vertical-align: middle;
 }
 
-
-properties when hohvered over the logo button
-.logobtn:hover{
+.btnimg:hover{
     animation-fill-mode: both;
     background-color: #E29578;
     color: #DBCBBD;
     transition: 200ms;
     transform: scale(1.2);
-
 }
 
 /* property of any image */
 .btn{
     display: inline-block;
     list-style: none;
-    margin: 1% 0 0.5% 0.5%;
-    
+    margin: 1% 0 0.5% 0.5%; 
 }
 
 /* property of any button when hovered */
@@ -367,8 +362,7 @@ properties when hohvered over the logo button
     border-width: 2px;
     border-color: #87431D;
     border-style: solid;
-    vertical-align: middle;
-    
+    vertical-align: middle;  
 }
 
 /* the last line of the website to address the audience  */
@@ -391,8 +385,7 @@ properties when hohvered over the logo button
     font-size: 280%;
     font-style: normal;
     text-align: center;
-    color: #DBCBBD  ;
-    
+    color: #DBCBBD;
     margin: 0;
     padding: 3% 0;  
 }
@@ -406,13 +399,19 @@ properties when hohvered over the logo button
     text-align: center;
     color: #DBCBBD;
     font-size: 180%;
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 3% 0;  
 }
 
 /* and the property the name of the div that holds the links at the end. */
 .footer{
+    background-color: #87431D;
+}
+
+.subft1{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0;
     padding: 0;
     background-color: #87431D;
@@ -424,69 +423,141 @@ properties when hohvered over the logo button
     font-family: "Nunito", sans-serif;
 }
 
-/* the properties of the first div in the footer */
-.ftdiv1{
-    margin: 2%;
-    padding: 0;
-    width: auto;
-    
+.news-frm{
+    border-bottom: 1%;
+    border-color: #DBCBBD;
 }
 
-/* the properties of the second div in the footer */
-.ftdiv2{
-    margin: 2%;
-    padding: 0;
-    width: auto;
-
+.news{
+    font-size: medium;
+    border: none;
+    border-radius: 0.8rem;
+    padding-left: 0.7rem;
+    width: 10vw;
+    height: 3vh;
+    background-color: rgba(219, 203, 189,1);
+    outline: none;
+    overflow: hidden;
 }
 
-/* the properties of the third div in the footer */
-.ftdiv3{
-    margin: 2%;
-    padding: 0;
-    width: auto;
-}
-/* ]the properties of the fourth div in the footer */
-.ftdiv4{
-    margin: 2%;
-    padding: 0;
-    width: auto;
+.news::placeholder{
+    color: #87431D;
 }
 
 /* the subscribe button properties */
 .sub-btn{
-    border: #87431D solid 2px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #87431D;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.8rem;
+    width: 4vw;
+    height: 3.125vh;
+    background-color: #DBCBBD;
+    outline: none;
+    overflow: hidden;
+    color: #290001;
 }
+
+/* the properties of the first div in the footer */
+.ftdiv1{
+    margin: 1rem;
+    padding: 0; 
+}
+
+/* the properties of the second div in the footer */
+.ftdiv2{
+    margin: 1rem;
+    padding: 0;
+}
+
+/* the properties of the third div in the footer */
+.ftdiv3{
+    margin: 1rem;
+    padding: 0;
+}
+
+/* ]the properties of the fourth div in the footer */
+.ftdiv4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.clh4{
+    margin-top: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    color: #DBCBBD;
+    font-size: 1.3rem;
+}
+
+.ftlogo{
+    margin: 1vh 1vw;
+    padding: 0;
+    width: 8vw;
+    border: none;
+}   
 
 /* the properties for the lists in the footer */
 .ftlist{
     margin: 0;
     padding: 0;
-
 }
 
 /* the properties for the links in the footer */
 .ftlink{
+    font-family: "Nunito", sans-serif;
     display: inline;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 112.6%;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    color: #ffffff;
-    width: 6%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #DBCBBD;
     cursor: pointer;
-    transition: 0.2s all;  
-    border-width: 2px;
+    transition: 0.2s all; 
+    transform: scale(1.2);
     vertical-align: middle;
-
 }
+
+.ftlink2{
+    font-family: "Nunito", sans-serif;
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: default;
+    color: #DBCBBD;
+    vertical-align: middle;
+}
+
+.copyright{ 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #87431D;
+}
+
+.end{
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    width: 35.5vw;
+    margin: 0;
+    padding: 0;
+    color: #DBCBBD;
+}
+
+@media (max-width: 600px) {
+    .div5i1{
+        flex-direction: column;
+    }
+    
+}
+
+
 
 
 

@@ -1,0 +1,55 @@
+.abtdiv{
+    text-align: center;
+    margin: 2rem 8rem;
+    border-radius: 1rem;
+    background-color: #290001;   
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.abtp1{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #290001;
+    font-size: 1.5rem;
+    padding: 0;
+    padding: 0 4rem;
+}
+
+.abtp2{
+    align-self: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    color: #DBCBBD;
+}
+
+.link1{
+    align-self: center;
+}
+
+.abtlist{
+    padding: 0;
+    margin: 0;
+}
+
+.dntfrmdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.dntfrm{
+    
+}
+
+.mnyfrm {
+    
+}
+
+.mnyfrmdiv{
+
+}
+
+
+.radbtn input[type="radio"]{
+    display: none;
+}
