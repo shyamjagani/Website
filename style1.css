@@ -21,7 +21,8 @@
     text-align: center;
     margin: 2rem 8rem;
     border-radius: 1rem;
-    background-color: var(--color4);   
+    background-color: rgba(41, 0, 1,0.9);
+    /* background-color: var(--color4);    */
     padding: 2rem 4rem 2rem 4rem;
 }
 
@@ -64,14 +65,57 @@
     text-align: center;
 }
 
-table{
-    font-family: "Nunito", sans-serif;
+.table1{ 
     font-optical-sizing: auto;
     font-style: normal;
     padding: 1.5rem;
     background-color: var(--color3); 
     border-radius: 1.5rem;
     width: 40vw;
+}
+
+.Volunteer{
+    align-items: center;
+}
+
+.table2{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    padding: 1rem 1rem 1rem 2rem;
+    margin: 0 auto 3rem auto;
+    background-color: var(--color4);
+    border-radius: 1rem;
+    color: var(--color1);
+}
+
+.careers{
+    align-items: center;
+}
+
+.careers-table{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    padding: 1rem 1rem 1rem 2rem;
+    margin: 0 auto 0 auto;
+    background-color: var(--color4);
+    border-radius: 1rem;
+    color: var(--color1);
+}
+
+.cols{
+    padding: 0 1rem;
+}
+
+.table-link{
+    color: var(--color1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vol-link:hover{
+    color: var(--color1);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .row2, .row3{
