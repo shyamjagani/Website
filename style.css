@@ -1,5 +1,4 @@
-/* colours: old #B7410E, #EDF6F9, #83C5BE, #006D77.*/
-
+/* variable declaration using root */
 :root{
     --color1: #EEEEEE;
     --color2: #222831;
@@ -11,16 +10,12 @@
 
 
 
-/* body element to indicate the colour and margin of the tag */
+/* body element to indicate the colour, margin and padding of the tag */
 body{
     background-color: var(--color1);
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
 }
-
-
-
 
 /* The navigation bar styles */
 .navigation_bar_div{
@@ -63,6 +58,7 @@ body{
     background-color: var(--color3);
 }
 
+/* styles for the menu buttons */
 .menu_button_link{
     text-decoration: none;
     padding: 0;
@@ -123,9 +119,6 @@ body{
     color: var(--color3);
 }
 
-
-
-
 /* the div with the looping video */
 .welcome_div{ 
     position: relative;
@@ -161,6 +154,7 @@ body{
     padding: 3% 0;  
 }
 
+/* style if teh donate button on the index page */
 .donate_button{
     margin: 0 45vw 0 43.5vw;
     width: 10vw;
@@ -173,6 +167,7 @@ body{
     font-size: 2.5rem;
 }
 
+/* styles when the donate button is hovered */
 .donate_button:hover{
     transition: 200ms;
     background-color: var(--color3);
@@ -191,8 +186,6 @@ body{
     text-align: center;
     padding-bottom: 0;
 }
-
-
 
 /* the container with the news about  the charity */
 .news_div{
@@ -219,16 +212,19 @@ body{
     height: 94vh;    
 }
 
+/* style for the div including the impact stats */
 .impact_div{
     background-color: transparent;
     padding: 0.1rem;  
 }
 
+/* atyles for the div in the parent impact mentioned above */
 .div5i1{
     display: flex;
     justify-content: space-evenly;
 }
 
+/* styling for the impact section images */
 .img-i{
     height: 37vh;
     display: inline;
@@ -237,33 +233,17 @@ body{
     width: 20vw;
 }
 
+/* style for the h3 in the impact section */
 .h3i{
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
     color: var(--color3);  
 }
 
+/* style for the span tag */
 span{
     position: absolute
 }
-
-/* #i1{
-    grid-area: 1/1/2/2;
-	background-color: transparent;
-    z-index: -1;
-}
-
-#i2{
-    grid-area: 1/2/2/3;
-	background-color: transparent;
-    z-index: -1;
-}
-
-#i3{
-    grid-area: 1/3/2/4;
-	background-color: transparent;
-    z-index: -1;
-} */
 
 /* the properties of the h1 element that labels the divs  */
 .head2p{   
@@ -278,6 +258,7 @@ span{
     padding-bottom: 0;
 }
 
+/* the properties of the h1 element that labels the divs  */
 .head2i{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -307,6 +288,8 @@ span{
     margin: 2rem;
 }
 
+
+/* grid style */
 #g1{
     grid-area: 1/1/2/2;
 }
@@ -319,6 +302,8 @@ span{
     grid-area: 1/3/2/4;
 }
 
+
+/* impact div first part styling */
 .div5i1{
     flex-direction: row;
     display: flex;
@@ -327,7 +312,6 @@ span{
 }
 
 /* the properties of h1 tag in the different divs */
-
 .h3p{
     font-family: "Nunito", sans-serif;
     width: 50vw;
@@ -336,11 +320,13 @@ span{
     color: var(--color1);
 }
 
+/* styling of the h2 tag */
 .h2p1, .h2p2{
     padding: 0;
     margin: 0;
 }
 
+/* styling of the h2 tags */
 .h2p1{
     margin-top: 1rem;
 }
@@ -348,7 +334,7 @@ span{
 .h2p2{
     margin-top: 2rem;
 }
-
+ 
 /* properties of the images within the image tag */
 .newsimg{
     width: 100vw;
@@ -374,8 +360,6 @@ span{
     
 }
 
-
-
 /* properties that make up the logo button */
 .logobtn{
     padding: 0;
@@ -396,6 +380,7 @@ span{
     vertical-align: middle;
 }
 
+/* property image in the button when hovered */
 .btnimg:hover{
     animation-fill-mode: both;
     background-color: var(--hoverclr);
@@ -404,11 +389,7 @@ span{
     transform: scale(1.2);
 }
 
-
-/* property of the link element that decides the visual representation for the viewer */
-
-
-/* the last line of the website to address the audience  */
+/* styling of the paragraph element in the index page */
 .para1{  
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -421,14 +402,12 @@ span{
     padding: 1.5rem;
 }
 
-
-
-
 /* and the property the name of the div that holds the links at the end. */
 .footer{
     background-color: var(--color3);
 }
 
+/* style for the div in the footer div */
 .subft1{
     display: flex;
     justify-content: space-evenly;
@@ -438,17 +417,20 @@ span{
     background-color: var(--color3);
 }
 
+/* styling for the h3 in the news section */
 .newsh3{
     color: var(--color3);
     font-size: x-large;
     font-family: "Nunito", sans-serif;
 }
 
+/* styling for the newsletter form */
 .news-frm{
     border-bottom: 1%;
     border-color: var(--color1);
 }
 
+/* styling for newsletter input and placeholder*/
 .news{
     font-size: medium;
     border: none;
@@ -466,7 +448,7 @@ span{
 }
 
 /* the subscribe button properties */
-.sub-btn{
+.email_submit_button{
     font-size: 1rem;
     border: none;
     border-radius: 0.8rem;
@@ -479,9 +461,8 @@ span{
     cursor: pointer;
 }
 
-.sub-btn:hover{
+.email_submit_button:hover{
     background-color: var(--color2);
-    color: var(--color1);
     transition: 200ms;
     }
 
@@ -512,6 +493,7 @@ span{
     padding: 0;
 }
 
+/* newsletter h4 styling */
 .clh4{
     margin-top: 0;
     padding: 0;
@@ -520,6 +502,7 @@ span{
     font-size: 1.3rem;
 }
 
+/* footer logo styling */
 .ftlogo{
     margin: 1vh 1vw;
     padding: 0;
@@ -551,6 +534,7 @@ span{
     vertical-align: middle;
 }
 
+/* styling for the footer links headings */
 .ftlink2{
     font-family: "Nunito", sans-serif;
     display: inline;
@@ -564,6 +548,7 @@ span{
     vertical-align: middle;
 }
 
+/* styling for the copyright sections */
 .copyright{ 
     display: flex;
     margin: 0;
@@ -571,6 +556,7 @@ span{
     background-color: var(--color3);
 }
 
+/* styling for the copyright paragraph tag */
 .end{
     font-family: "Nunito", sans-serif;
     text-align: center;
@@ -578,13 +564,6 @@ span{
     margin: 0;
     padding: 0;
     color: var(--color1);
-}
-
-@media (max-width: 600px) {
-    .div5i1{
-        flex-direction: column;
-    }
-    
 }
 
 

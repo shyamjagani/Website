@@ -34,7 +34,7 @@
 
     </head>
     <body>
-        <script src="script.js"></script>
+
         
         <!-- this div contains all the elements for the navigation bar -->
         <div class="navigation_bar_div">
@@ -61,19 +61,27 @@
             </div>
         </div>
 
-                
+                <!-- start of the parent div -->
         <div class="donate1" style="height: 95vh; text-align: center; background-image: url(Images/impact-1.jpg); background-size: cover;">   
             
+            <!-- header of the parent -->
             <h1 class="heads" style="margin: 3rem 0; padding: 0;">Donate</h1>
 
+            <!-- start of th donate form div -->
             <div class="donate-form" >
 
+                <!-- table used for the form -->
                 <table class="table1">
+
+                    <!-- start of the form -->
                     <form class="dntfrm" action="/construction.html">
+
+                        <!-- no header used as not required for this use-case. All rows are classified and id'd -->
                         <tr>  
                             <td class="row1" id="r1c1" colspan="2"><p class="inp-p">Enter your first name:</p></td>  
                             <td class="row1" colspan="2"><input type="text" class="dntinp" name="firstname" placeholder="First Name"></td>
                         </tr>
+
                         <tr>
                             <td class="row2" colspan="2"><p class="inp-p">Enter your last name:</p></td>
                             <td class="row2" colspan="2"><input type="text" class="dntinp" name="lastname" placeholder="Last Name"></td>
@@ -85,8 +93,11 @@
                         <tr>
                             <td class="row4" colspan="4"><p class="table-p">Quick Donate!</p></td>
                         </tr>
+
+                        <!-- quick links added for people to donate anonymously -->
                         <tr class="row5">
                             <td class="colr5">
+   <!-- anchor tags used but styled to be buttons -->
                                 <a href="construction.html" class="mbtn">£10</a>
                             </td>   
                             <td class="colr5">
@@ -115,12 +126,16 @@
             </div>
             
         </div>
+
+
+
+        <!-- This section marks the start of the footer. -->
         <div class="footer">
 
             <div class="subft1">
             <!-- lists have been used here as well to maintain a sense of uniformity -->
 
-            <!-- links are yet to be added to the lists -->
+            <!-- all links work and navigate to the specific page and/or id on the page -->
                 <div class="ftdiv1">
                     <ul class="ftlist">
                         <li class="ftlink2">Legal</li><br>
@@ -159,7 +174,7 @@
                     <h4 class="clh4">Sign Up for our Newsletter!</h4>
                     <form action="" class="news-frm">
                         <input type="text" class="news" name="email" placeholder="Enter your email">
-                        <button type="submit" class="sub-btn" name="submit">Submit</button>
+                        <button type="submit" class="email_submit_button" name="submit">Submit</button>
 
                         
                     </form>
@@ -167,12 +182,13 @@
                     
                 </div>
 
-            
+                <!-- website logo added to the footer to remind the audience of our identity -->
                 <img src="Images/logobtn.png" alt="" class="ftlogo">
                 
             
         </div>
 
+        <!-- copyright seciton to give proper references and regards -->
         <div class="copyright">
            
         <p class="end">© 2024 CozyHomes. All rights Reserved.</p> <p class="end" id="end2">Charity Registration Number: 27042024</p>

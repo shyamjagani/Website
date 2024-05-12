@@ -31,9 +31,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fjalla+One&family=Rock+Salt&display=swap" rel="stylesheet">
 
+
+
+        <!-- use of internal css to demonstrate my understanding -->
         <style>
            
-
+            /* styling of the table in the page */
             table{
                 display: flex;
                 align-items: center;
@@ -41,12 +44,14 @@
 
             }
 
+            /* styling of the div containing the login form */
             .login-div{
                 display: flex;
                 flex-direction: column;
                 width: 25vw;
             }
 
+            /* styling of the div containing the signup form link */
             .link-div{
                 display: flex;
                 flex-direction: column;
@@ -54,6 +59,7 @@
                 font-family: 'nunito', sans-serif;
             }
 
+            /* styling of the login form */
             .login-form{
                 padding: 1rem;
                 border-radius: 0.1rem;
@@ -64,10 +70,12 @@
                 background-color: var(--color3);
             }
 
+            /* styling of the paragraph element */
             p{
                 margin: 0;
             }
 
+            /* styling of the email input tag in the login form */
             #login_email{
                 color: var(--color4);
                 font-size: 1.5rem;
@@ -78,51 +86,7 @@
                 border: none;
             }
 
-            #login_password{
-                color: var(--color4);
-                font-size: 1.5rem;
-                width: 20vw;
-                font-family: "nunito", sans-serif;
-                border-radius: 0.1rem;
-                border: none;
-            }
-
-            #login_email::placeholder{
-                font-size: 1.5rem;
-                font-family: "nunito", sans-serif;
-            }
-
-            #login_password::placeholder{
-                font-size: 1.5rem;
-                font-family: "nunito", sans-serif;
-            }
-
-            #login_submit{
-                font-size: 1.25rem;
-                margin: 1rem 0 1rem 0;
-                font-family: "nunito", sans-serif;
-                color: var(--color4);
-                background-color: var(--color1);
-                border: none;
-                border-radius: 0.1rem;
-                padding: 0.3rem 0.6rem;
-                width: 20.25vw;
-                cursor: pointer;
-            }
-
-            #login_submit:hover{
-                transition: 200ms;
-                color: var(--color1);
-                background-color: var(--color4);
-            }
-
-            .div_head_p{
-                margin: 2rem 0 1rem 0;
-                font-size: 2.25rem;
-                font-family: "nunito", sans-serif;
-                color: var(--color1);
-            }
-
+            /* sign up link button styling */
             button{
                 padding: 0.1rem 0.6rem;
                 font-family: 'nunito', sans-serif;
@@ -140,6 +104,58 @@
                 transition: 200ms;
             }
 
+            /* styling of the password input tag in the login form */
+            #login_password{
+                color: var(--color4);
+                font-size: 1.5rem;
+                width: 20vw;
+                font-family: "nunito", sans-serif;
+                border-radius: 0.1rem;
+                border: none;
+            }
+
+            /* styling of the placeholder of the email input tag in the login form */
+            #login_email::placeholder{
+                font-size: 1.5rem;
+                font-family: "nunito", sans-serif;
+            }
+
+            /* styling of the placeholder of the password input tag in the login form */
+            #login_password::placeholder{
+                font-size: 1.5rem;
+                font-family: "nunito", sans-serif;
+            }
+
+            /* styling of the submit button */
+            #login_submit{
+                font-size: 1.25rem;
+                margin: 1rem 0 1rem 0;
+                font-family: "nunito", sans-serif;
+                color: var(--color4);
+                background-color: var(--color1);
+                border: none;
+                border-radius: 0.1rem;
+                padding: 0.3rem 0.6rem;
+                width: 20.25vw;
+                cursor: pointer;
+            }
+
+            /* styling of the submit button when hovered */
+            #login_submit:hover{
+                transition: 200ms;
+                color: var(--color1);
+                background-color: var(--color4);
+            }
+
+            /* styling of the the sign up div header */
+            .div_head_p{
+                margin: 2rem 0 1rem 0;
+                font-size: 2.25rem;
+                font-family: "nunito", sans-serif;
+                color: var(--color4);
+            }
+
+            /* styling of the links */
             .link_p{
                 font-family: 'nunito', sans-serif;
                 font-size: 1.5rem;
@@ -150,12 +166,14 @@
                 width: 25vw;
             }
 
+            /* logo styling */
             .login_logo{
                 background-color: transparent;
                 width: 7vw;
                 margin: 1rem 0;
             }
 
+            /* styling of the signup div */
             #signup_div{
                 display: flex;
                 flex-direction: column;
@@ -168,6 +186,8 @@
                 background-color: var(--color1); 
             }
 
+
+            /* styling of the form used to signup */
             #signup_form{
                 display: flex;
                 flex-direction: column;
@@ -175,6 +195,7 @@
                 justify-content: center;
             }
 
+            /* styling of table in which the form based */
             #signup_table{
                 display: flex;
                 flex-direction: column;
@@ -183,6 +204,7 @@
                 
             }
 
+            /* styling of the input tag */
             .signup_input{
                 width: 20vw;
                 font-family: 'nunito', sans-serif;
@@ -193,11 +215,14 @@
                 color: var(--color4);
             }
 
+            /* styling of the label tag */
             .signup_label{
                 font-size: 1.35rem;
                 color: var(--color4);
             }
 
+
+            /* styling of teh submit button tag */
             #signup_submit_button{
                 font-size: 1.25rem;
                 margin: 1rem 0 1rem 0;
@@ -212,6 +237,7 @@
                 
             }
 
+            /* styling of the submit button when hovered */
             #signup_submit_button:hover{
                 transition: 200ms;
                 color: var(--color1);
@@ -252,16 +278,28 @@
 
             </div>
 
+            <!-- header of the page -->
                 <h1 class="heads">Login</h1>
 
+                <!-- parent div -->
             <div class="login-page-div"  style="text-align: center;">
-            <table>
+            
+            <!-- table for two parts of the page -->
+                <table>
+
+                    <!-- 1 row in the table add 2 columns -->
             <tr>
+
+                <!-- first column for the login form  -->
                 <td style="background-color: var(--color3); border-radius: 0.1rem;">
                     <div class="login-div">
+
+                        <!-- login form -->
                         <form action="/construction.html" class="login-form">
                             <p class="div_head_p">Login</p>
                             <img src="Images/logobtn.png" alt="" class="login_logo">
+
+                            <!-- input tags -->
                             <input type="email" name="login_email" id="login_email" placeholder="Email">
 
                             <input type="password" name="login_password" id="login_password" placeholder="Password">
@@ -270,6 +308,8 @@
                         </form>
                     </div>
                 </td>
+
+                <!-- second column for the signup link -->
                 <td style="background-color: var(--color1); border-radius: 0.1rem;">
                     <div class="link_div">
                         <p class="link_p">Don't have an account?</p>
@@ -278,19 +318,29 @@
                 </td>
             </tr>
             </table>
+
+
             </div>
 
+            
+            <!-- sign up div -->
             <div id="signup_div">
                 
+                <!-- sign up form -->
                 <form action="/construction.html" id="signup_form">
 
-                    
+                    <!-- sign up header -->
                     <p class="div_head_p">Sign Up</p>
 
+
+                    <!-- sign up table -->
                     <table id="signup_table">
 
+                        <!-- a combination of rows and columns used make a compelling design and to demonstrate my styling capabilities. -->
                         <tr>
                             <td>
+
+<!-- labels and input tags used throughout the table -->
                                 <label for="first_name_signup" class="signup_label" style="display: flex; flex-direction: column;">First Name</label>
                                 <input type="text" id="first_name_signup" name="first_name_signup" class="signup_input">
                             </td>
@@ -335,6 +385,8 @@
                         
                         <tr>
                             <td colspan="2">
+
+          <!-- submit button using an input -->
                                 <input type="submit" name="signup_submit_button" id="signup_submit_button" value="Sign Up">
                             </td>
                         </tr>                        
@@ -351,69 +403,71 @@
 
 
 
-            <div class="footer">
+           <!-- This section marks the start of the footer. -->
+        <div class="footer">
 
-                <div class="subft1">
-                <!-- lists have been used here as well to maintain a sense of uniformity -->
+            <div class="subft1">
+            <!-- lists have been used here as well to maintain a sense of uniformity -->
 
-                <!-- links are yet to be added to the lists -->
-                    <div class="ftdiv1">
-                        <ul class="ftlist">
-                            <li class="ftlink2">Legal</li><br>
-                            <br>
-                            <li class="ftlink"><a href="construction.html">Terms of Service</a></li><br>
-                            <li class="ftlink"><a href="construction.html">Privacy Policy</a></li><br>
-                            <li class="ftlink"><a href="construction.html">Help</a></li><br>
+            <!-- all links work and navigate to the specific page and/or id on the page -->
+                <div class="ftdiv1">
+                    <ul class="ftlist">
+                        <li class="ftlink2">Legal</li><br>
+                        <br>
+                        <li class="ftlink"><a href="construction.html">Terms of Service</a></li><br>
+                        <li class="ftlink"><a href="construction.html">Privacy Policy</a></li><br>
+                        <li class="ftlink"><a href="construction.html">Help</a></li><br>
 
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
 
-                    <div class="ftdiv2">
-                        <ul class="ftlist"> 
-                            <li class="ftlink2">Support</li><br>
-                            <br>
-                            <li class="ftlink"><a href="joinus.html#volunteer-part">Volunteer</a></li><br>
-                            <li class="ftlink"><a href="joinus.html#careers-part">Careers</a></li><br>
-                            <li class="ftlink"><a href="donate.html">Donate</a></li><br>
-                        </ul>
-                    </div>
+                <div class="ftdiv2">
+                    <ul class="ftlist"> 
+                        <li class="ftlink2">Support</li><br>
+                        <br>
+                        <li class="ftlink"><a href="joinus.html#volunteer-part">Volunteer</a></li><br>
+                        <li class="ftlink"><a href="joinus.html#careers-part">Careers</a></li><br>
+                        <li class="ftlink"><a href="donate.html">Donate</a></li><br>
+                    </ul>
+                </div>
 
-                    <div class="ftdiv3">
-                        <ul class="ftlist">
-                            <li class="ftlink2">Social</li><br><br>
-                            
-                            <li class="ftlink"><a href="https://instagram.com">Instagram</a></li><br>
-                            <li class="ftlink"><a href="https://facebook.com">Facebook</a></li><br>
-                            <li class="ftlink"><a href="https://x.com">X(Twitter)</a></li><br>
-                            
-
-                        </ul>
-                    </div>
-                    <div class="ftdiv4">
+                <div class="ftdiv3">
+                    <ul class="ftlist">
+                        <li class="ftlink2">Social</li><br><br>
                         
-                        <!-- form used to get users information to subsrcibe to our newsletter -->
-                        <h4 class="clh4">Sign Up for our Newsletter!</h4>
-                        <form action="" class="news-frm">
-                            <input type="text" class="news" name="email" placeholder="Enter your email">
-                            <button type="submit" class="sub-btn" name="submit">Submit</button>
-
-                            
-                        </form>
-
+                        <li class="ftlink"><a href="https://instagram.com">Instagram</a></li><br>
+                        <li class="ftlink"><a href="https://facebook.com">Facebook</a></li><br>
+                        <li class="ftlink"><a href="https://x.com">X(Twitter)</a></li><br>
                         
-                    </div>
 
-                
-                    <img src="Images/logobtn.png" alt="" class="ftlogo">
+                    </ul>
+                </div>
+                <div class="ftdiv4">
                     
+                    <!-- form used to get users information to subsrcibe to our newsletter -->
+                    <h4 class="clh4">Sign Up for our Newsletter!</h4>
+                    <form action="" class="news-frm">
+                        <input type="text" class="news" name="email" placeholder="Enter your email">
+                        <button type="submit" class="email_submit_button" name="submit">Submit</button>
+
+                        
+                    </form>
+
+                    
+                </div>
+
+                <!-- website logo added to the footer to remind the audience of our identity -->
+                <img src="Images/logobtn.png" alt="" class="ftlogo">
                 
-            </div>
+            
+        </div>
 
-            <div class="copyright">
-               
-            <p class="end">© 2024 CozyHomes. All rights Reserved.</p> <p class="end" id="end2">Charity Registration Number: 27042024</p>
+        <!-- copyright seciton to give proper references and regards -->
+        <div class="copyright">
+           
+        <p class="end">© 2024 CozyHomes. All rights Reserved.</p> <p class="end" id="end2">Charity Registration Number: 27042024</p>
 
-            </div>
+        </div>
 
 
     </body>

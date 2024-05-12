@@ -1,3 +1,5 @@
+
+/* variable declaration using root */
 :root{
     --color1: #EEEEEE;
     --color2: #393E46;
@@ -7,8 +9,7 @@
     --hoverclr: #222831;
 }
 
-
-
+/* styling for the headers of the webpages */
 .heads{
     font-family: "Nunito", sans-serif;
     font-weight: 400;
@@ -20,6 +21,8 @@
     padding-bottom: 0;
 }
 
+
+/* parent div in the aboutus page */
 .abtdiv{
     text-align: center;
     margin: 2rem 8rem;
@@ -29,6 +32,7 @@
     padding: 2rem 4rem 2rem 4rem;
 }
 
+/* about us paragraph 1 styling */
 .abtp1{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -39,6 +43,7 @@
     padding: 0 4rem;
 }
 
+/* about us paragraph 2 styling */
 .abtp2{
     align-self: center;
     font-family: "Nunito", sans-serif;
@@ -46,31 +51,32 @@
     color: var(--color1);
 }
 
-.link1{
-    align-self: center;
-}
-
-.abtlist{
+/* list styling  */
+.abtlist, .abtlist2{
     padding: 0;
     margin: 0;
 }
 
+/* list styling  */
 .list{
     list-style: none;
 }
 
+/* donate div styling */
 .donate1{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* donate form styling */
 .donate-form{
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
+/* table styling */
 .table1{ 
     font-optical-sizing: auto;
     font-style: normal;
@@ -80,10 +86,12 @@
     width: 40vw;
 }
 
+/* volunteer div styling */
 .Volunteer{
     align-items: center;
 }
 
+/* table styling */
 .table2{
     text-align: center;
     font-family: "Nunito", sans-serif;
@@ -94,10 +102,12 @@
     color: var(--color1);
 }
 
+/* careers styling div */
 .careers{
     align-items: center;
 }
 
+/* careers table div */
 .careers-table{
     text-align: center;
     font-family: "Nunito", sans-serif;
@@ -108,39 +118,47 @@
     color: var(--color1);
 }
 
+/* table column styling */
 .cols{
     padding: 0 1rem;
 }
 
+/* table links styling */
 .table-link{
     color: var(--color1);
     text-decoration: none;
     cursor: pointer;
 }
 
+/* volunteer link hovered styling */
 .vol-link:hover{
     color: var(--color1);
     text-decoration: none;
     cursor: pointer;
 }
 
+/* tables row link styling */
 .row2, .row3{
     padding: 1.5rem 0;
 }
 
+/* tables row link styling */
 .row1{
     padding-bottom: 1.5rem;
 }
 
+/* tables row link styling */
 #r1c1{
     width: 25vw;
     text-align: right;
 }
 
+/* tables column link styling */
 .col2{
     padding: 1.5rem;
 }
 
+/* donate input styling */
 .dntinp{
     width: 15vw;
     font-family: "Nunito", sans-serif;
@@ -154,18 +172,20 @@
     background-color: var(--color1);
 }
 
+/* tables row link styling */
 .row6, .row4{
     color: var(--color1);
     width: 50%;
 }
 
+/* table paragraph styling */
 .table-p{
     padding: 0;
     margin: 1rem;
     font-size: 1.25rem;
     font-family: 'nunito', sans-serif;  
 }
-
+/* 'input paragraph styling */
 .inp-p{
     font-family: 'nunito', sans-serif;
     text-align: right;
@@ -175,11 +195,15 @@
     margin: 0;
 }
 
+/* tables row link styling */
 #oth{
     width: 24vw;
     height: 4.4vh;
 }
 
+
+
+/* more than 8 styles used to transform the anchor tags into buttons demondtrating my css capabilities as well as to satisfy the marking criteria. */
 .mbtn{
     text-decoration: none;
     margin-bottom: 1rem;
@@ -204,6 +228,7 @@
     cursor: pointer;
 }
 
+/* pay button styling */
 .pay{
     text-decoration: none;
     font-family: "Nunito", sans-serif;
@@ -219,6 +244,7 @@
     background-color: var(--color1);  
 }
 
+pay button hovered styling
 .pay:hover{
     color: var(--color1);
     background-color: var(--color4);

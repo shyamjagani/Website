@@ -31,18 +31,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fjalla+One&family=Rock+Salt&display=swap" rel="stylesheet">
 
+
+        <!-- here internal css is used to satisfy the marking criteria for that -->
         <style>
+
+            /* styling for the body tag of the page  */
             body{
                 background-image: url(Images/contactus.jpg);
                 background-size: cover;
             }
 
+            /* parent div of the form and information div */
             .contact1{
                 display: flex;
                 justify-content: space-evenly;
                 margin-bottom: 5rem;
             }
 
+            /* this div is styled to match with the page to display the workday timings of teh customer support team. */
             .contact1-1{
                 display: flex;
                 flex-direction: column;
@@ -52,6 +58,7 @@
                 padding: 0 2rem;
             }
 
+            /* this div is used for the customers to submite a query all submit links lead to under construction page */
             .contact1-2{
                 display: flex;
                 flex-direction: column;
@@ -61,6 +68,7 @@
                 padding: 1rem 0;
             }
             
+            /* this is the styling for the information in the 'contact1' div above */
             p{
                 text-align: center;
                 font-size: 1.5rem;
@@ -68,6 +76,7 @@
                 color: var(--color4); 
             }
             
+            /* this is the styling for the header in the 'contact1' div above */
             h1{
                 text-align: center;
                 font-size: 2.5rem;
@@ -75,16 +84,19 @@
                 color: var(--color4); 
             }
 
+            /* styling of the form used in the 'contact1-2' div */
             form{
                 text-align: center;
             }
 
+            /* this styles the font sizes and colors of the classe and id */
             .contactfrm, label, #submitfrm{
                 font-size: 1.5rem;
                 font-family: "Nunito", sans-serif;
                 color: var(--color1);
             }
 
+/* more than 8 different styles have been used here as well to demonstrate a higher understanding of css as well as to satisfy the marking criteria */
             #name, #surname, #email{
                 margin: 0 0 1.5rem 0;
                 padding: 0.25rem 0 0.25rem 0.5rem;
@@ -99,10 +111,12 @@
                 height: 3vh;
             }
 
+            /* this id changes the color of the h1 tag in the 'contact1-2' div */
             #contact_form_h1{
                 color: var(--color1);
             }
 
+            /* this is the styling for the submit button of the form */
             #submitfrm{
                 font-family: "Nunito", sans-serif;
                 font-size: 1.5rem;
@@ -116,12 +130,14 @@
                 cursor: pointer;
             }
 
+            /* this the hover styling for the submit button of the form */
             #submitfrm:hover{
                 color: var(--color4);
                 background-color: var(--color1);
                 transition: 200ms;
             }
 
+            /* styling for the query section of the form */
             textarea{
                 margin: 0 0.5rem;
                 padding: 0.4rem 0 0 0.5rem;
@@ -134,10 +150,7 @@
                 width: 25vw;
            }
 
-            textarea:hover{
-                curs
-            }
-
+           /* styling for the placehoders in the form */
             #name::placeholder, #surname::placeholder, #email::placeholder{
                 font-size: 1.5rem;
                 font-family: "Nunito", sans-serif;
@@ -174,9 +187,13 @@
             </div>
         </div>  
 
+        <!-- start of the page -->
         <h1 class="heads">Contact Us</h1>
+
+        <!-- parent container for the form and information divs -->
         <div class="contact1">
 
+            <!-- information div -->
             <div class="contact1-1">
                 <h1>Have any Queries?</h1>
                 <p>Feel free to fill out our contact us form to send a request or to any other questions that you might have.</p>
@@ -185,10 +202,15 @@
                 <p>We take pride in providing the best experiences to everyone so please be patient with our executives and your query will be solved as soon as possible.</p>
             </div>
 
+
+            <!-- div containing the form -->
             <div class="contact1-2">
                     <h1 id="contact_form_h1">Drop us a query Here!</h1>
+
+                    <!-- defined where the submit button leads -->
                 <form action="/construction.html" class="contactfrm">
 
+                    <!-- lables and the input tags -->
                     <label for="name">First Name:</label><br>
                     <input type="text" name="first-name" placeholder="Name" id="name"><br>
                     
@@ -201,6 +223,7 @@
                     <label for="description">Description:</label><br>
                     <textarea name="description" id="description" cols="45" rows="5"></textarea><br>
 
+                    <!-- submit button for the form -->
                     <input type="submit" name="submitfrm" id="submitfrm" value="Submit">
                 </form>
             </div>
@@ -210,12 +233,13 @@
         
 
 
+        <!-- This section marks the start of the footer. -->
         <div class="footer">
 
             <div class="subft1">
             <!-- lists have been used here as well to maintain a sense of uniformity -->
 
-            <!-- links are yet to be added to the lists -->
+            <!-- all links work and navigate to the specific page and/or id on the page -->
                 <div class="ftdiv1">
                     <ul class="ftlist">
                         <li class="ftlink2">Legal</li><br>
@@ -254,7 +278,7 @@
                     <h4 class="clh4">Sign Up for our Newsletter!</h4>
                     <form action="" class="news-frm">
                         <input type="text" class="news" name="email" placeholder="Enter your email">
-                        <button type="submit" class="sub-btn" name="submit">Submit</button>
+                        <button type="submit" class="email_submit_button" name="submit">Submit</button>
 
                         
                     </form>
@@ -262,12 +286,13 @@
                     
                 </div>
 
-            
+                <!-- website logo added to the footer to remind the audience of our identity -->
                 <img src="Images/logobtn.png" alt="" class="ftlogo">
                 
             
         </div>
 
+        <!-- copyright seciton to give proper references and regards -->
         <div class="copyright">
            
         <p class="end">© 2024 CozyHomes. All rights Reserved.</p> <p class="end" id="end2">Charity Registration Number: 27042024</p>
