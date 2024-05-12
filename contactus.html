@@ -38,16 +38,14 @@
             }
 
             .contact1{
-                height: 70vh;
                 display: flex;
                 justify-content: space-evenly;
+                margin-bottom: 5rem;
             }
 
             .contact1-1{
                 display: flex;
-                justify-content: center;
                 flex-direction: column;
-                align-items: center;
                 background-color: var(--color1);
                 width: 50vw;
                 border-radius: 1.5rem;
@@ -56,10 +54,8 @@
 
             .contact1-2{
                 display: flex;
-                justify-content: center;
                 flex-direction: column;
-                align-items: center;
-                background-color: var(--color1);
+                background-color: var(--color4);
                 width: 30vw;
                 border-radius: 1.5rem;
                 padding: 1rem 0;
@@ -86,7 +82,7 @@
             .contactfrm, label, #submitfrm{
                 font-size: 1.5rem;
                 font-family: "Nunito", sans-serif;
-                color: var(--color4);
+                color: var(--color1);
             }
 
             #name, #surname, #email{
@@ -94,8 +90,8 @@
                 padding: 0.25rem 0 0.25rem 0.5rem;
                 font-family: "Nunito", sans-serif;
                 font-size: 1.5rem;
-                color: var(--color1);
-                background-color: var(--color4);
+                color: var(--color4);
+                background-color: var(--color1);
                 outline: none;
                 border: none;
                 border-radius: 1rem;
@@ -103,11 +99,15 @@
                 height: 3vh;
             }
 
+            #contact_form_h1{
+                color: var(--color1);
+            }
+
             #submitfrm{
                 font-family: "Nunito", sans-serif;
                 font-size: 1.5rem;
-                color: var(--color4);
-                background-color: var(--color1);
+                color: var(--color1);
+                background-color: var(--color4);
                 outline: none;
                 border: 0.2rem solid var(--color4);
                 border-radius: 1.5rem;
@@ -117,20 +117,25 @@
             }
 
             #submitfrm:hover{
-                color: var(--color1);
-                background-color: var(--color4);
+                color: var(--color4);
+                background-color: var(--color1);
+                transition: 200ms;
             }
 
             textarea{
                 margin: 0 0.5rem;
                 padding: 0.4rem 0 0 0.5rem;
                 font-family: "Nunito", sans-serif;
-                color: var(--color1);
-                background-color: var(--color4);
+                color: var(--color4);
+                background-color: var(--color1);
                 outline: none;
                 border: none;
                 border-radius: 1rem;
                 width: 25vw;
+           }
+
+            textarea:hover{
+                curs
             }
 
             #name::placeholder, #surname::placeholder, #email::placeholder{
@@ -144,22 +149,28 @@
     </head>
     <body>
         
-        <div class="div2">   
+        <!-- this div contains all the elements for the navigation bar -->
+        <div class="navigation_bar_div">
+                
             <!-- Created a list to store all the buttons of the navigation bar. -->
-            <ul class="list">
+            <ul class="menu_buttons_list">
+
                 <!-- all of the links and anchor tags used. -->
                 <a class="logobtn" href="index.html"><img class="btnimg" src="Images/logobtn.png" alt="CozyHomes"></button></a>
-                <li class="btn"><a class="link" href="donate.html">Donate</a></li>
-                <li class="btn"><a class="link" href="aboutus.html">About us</a></li>
-                <li class="btn"><a class="link" href="contactus.html">Contact us</a></li>
-                <li class="btn"><a class="link" href="joinus.html">Join us</a></li>
-                <li class="btn"><a class="link" href="login.html">Login</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="aboutus.html">About us</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="contactus.html">Contact us</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="joinus.html">Join us</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="donate.html">Donate</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="login.html">Login</a></li>
+
             </ul>
+
             <!-- created another div for the search bar in the nav pane. -->
-            <div class="div3">
-                <form class="src-frm" action="index.html">
-                    <span class="material-symbols-outlined" style="position: absolute; font-size: larger; padding: 0.4rem 0.3rem 0.1rem 0.2rem; color: #DBCBBD;">search</span><input type="search" class="src-inp" name="src" placeholder="Search...">
+            <div class="search_bar_div">
+                <form class="search_bar_form" action="index.html">
+                    <span class="material-symbols-outlined" style="position: absolute; font-size: larger; padding: 0.4rem 0.3rem 0.1rem 0.2rem; color: var(--color3);">search</span><input type="search" class="search_bar_input" name="src" placeholder="Search...">
                 </form>
+            
             </div>
         </div>  
 
@@ -175,8 +186,8 @@
             </div>
 
             <div class="contact1-2">
-                    <h1>Drop us a query Here!</h1>
-                <form action="construction.html" class="contactfrm">
+                    <h1 id="contact_form_h1">Drop us a query Here!</h1>
+                <form action="/construction.html" class="contactfrm">
 
                     <label for="name">First Name:</label><br>
                     <input type="text" name="first-name" placeholder="Name" id="name"><br>
@@ -199,69 +210,69 @@
         
 
 
-            <div class="footer" style="margin-top: 10vh;">
+        <div class="footer">
 
-                <div class="subft1">
-                <!-- lists have been used here as well to maintain a sense of uniformity -->
+            <div class="subft1">
+            <!-- lists have been used here as well to maintain a sense of uniformity -->
 
-                <!-- links are yet to be added to the lists -->
-                    <div class="ftdiv1">
-                        <ul class="ftlist">
-                            <li class="ftlink2">Legal</li><br>
-                            <br>
-                            <li class="ftlink">Terms of Service</li><br>
-                            <li class="ftlink">Privacy Policy</li><br>
-                            <li class="ftlink">Help</li><br>
+            <!-- links are yet to be added to the lists -->
+                <div class="ftdiv1">
+                    <ul class="ftlist">
+                        <li class="ftlink2">Legal</li><br>
+                        <br>
+                        <li class="ftlink"><a href="construction.html">Terms of Service</a></li><br>
+                        <li class="ftlink"><a href="construction.html">Privacy Policy</a></li><br>
+                        <li class="ftlink"><a href="construction.html">Help</a></li><br>
 
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
 
-                    <div class="ftdiv2">
-                        <ul class="ftlist"> 
-                            <li class="ftlink2">Support</li><br>
-                            <br>
-                            <li class="ftlink">Volunteer</li><br>
-                            <li class="ftlink">Donate</li><br>
-                            <li class="ftlink">Careers</li><br>
-                        </ul>
-                    </div>
+                <div class="ftdiv2">
+                    <ul class="ftlist"> 
+                        <li class="ftlink2">Support</li><br>
+                        <br>
+                        <li class="ftlink"><a href="joinus.html#volunteer-part">Volunteer</a></li><br>
+                        <li class="ftlink"><a href="joinus.html#careers-part">Careers</a></li><br>
+                        <li class="ftlink"><a href="donate.html">Donate</a></li><br>
+                    </ul>
+                </div>
 
-                    <div class="ftdiv3">
-                        <ul class="ftlist">
-                            <li class="ftlink2">Social</li><br><br>
-                            
-                            <li class="ftlink">Instagram</li><br>
-                            <li class="ftlink">Facebook</li><br>
-                            <li class="ftlink">X(Twitter)</li><br>
-                            
-
-                        </ul>
-                    </div>
-                    <div class="ftdiv4">
+                <div class="ftdiv3">
+                    <ul class="ftlist">
+                        <li class="ftlink2">Social</li><br><br>
                         
-                        <!-- form used to get users information to subsrcibe to our newsletter -->
-                        <h4 class="clh4">Sign Up for our Newsletter!</h4>
-                        <form action="" class="news-frm">
-                            <input type="text" class="news" name="email" placeholder="Enter your email">
-                            <button type="submit" class="sub-btn" name="submit">Submit</button>
-
-                            
-                        </form>
-
+                        <li class="ftlink"><a href="https://instagram.com">Instagram</a></li><br>
+                        <li class="ftlink"><a href="https://facebook.com">Facebook</a></li><br>
+                        <li class="ftlink"><a href="https://x.com">X(Twitter)</a></li><br>
                         
-                    </div>
 
-                
-                    <img src="Images/logobtn.png" alt="" class="ftlogo">
+                    </ul>
+                </div>
+                <div class="ftdiv4">
                     
+                    <!-- form used to get users information to subsrcibe to our newsletter -->
+                    <h4 class="clh4">Sign Up for our Newsletter!</h4>
+                    <form action="" class="news-frm">
+                        <input type="text" class="news" name="email" placeholder="Enter your email">
+                        <button type="submit" class="sub-btn" name="submit">Submit</button>
+
+                        
+                    </form>
+
+                    
+                </div>
+
+            
+                <img src="Images/logobtn.png" alt="" class="ftlogo">
                 
-            </div>
+            
+        </div>
 
-            <div class="copyright">
-               
-            <p class="end">© 2024 CozyHomes. All rights Reserved.</p> <p class="end" id="end2">Charity Registration Number: 27042024</p>
+        <div class="copyright">
+           
+        <p class="end">© 2024 CozyHomes. All rights Reserved.</p> <p class="end" id="end2">Charity Registration Number: 27042024</p>
 
-            </div>
+        </div>
         
 
     </body>

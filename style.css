@@ -1,50 +1,104 @@
 /* colours: old #B7410E, #EDF6F9, #83C5BE, #006D77.*/
 
 :root{
-    --color1: #DBCBBD;
-    --color2: #C87941;
-    --color3: #87431D;
-    --color4: #290001;
-    --placeholderclr: #FFD4C2;
-    --hoverclr: #E29578;
+    --color1: #EEEEEE;
+    --color2: #222831;
+    --color3: #393E46;
+    --color4: #006D77;
+    --placeholderclr: #EEEEEE;
+    --hoverclr: #222831;
 }
+
+
+
 /* body element to indicate the colour and margin of the tag */
 body{
     background-color: var(--color1);
-    margin: 0;   
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
 }
 
+
+
+
 /* The navigation bar styles */
-.div2{
-    border-color: var(--color1);
+.navigation_bar_div{
+    border-color: var(--color3);
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: var(--color3);
+    background-color: var(--color1);
     justify-content: center;
     padding: auto;
     z-index: 1000;
 }
 
+/* lists used in the navbar */
+.menu_buttons_list{
+    text-decoration: none;
+    display: inline;
+    padding: 0;
+    margin: 0 0 0 2%;
+}
+
+/* property of any image */
+.menu_button{
+    display: inline-block;
+    list-style: none;
+    margin: 1% 0 0.5% 0.5%; 
+}
+
+/* property of any button when hovered */
+.menu_button:hover{
+    animation-fill-mode: both;
+    background-color: var(--hoverclr);
+    color: var(--color3);
+    transition: 200ms;
+    transform: scale(1.2);
+}
+
+/* property of any button when active */
+.menu_button.active{
+    background-color: var(--color3);
+}
+
+.menu_button_link{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    font-size: 112.6%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: var(--color3);
+    width: 6%;
+    background-color: var(--color1);
+    cursor: pointer;
+    transition: 0.2s all;  
+    border-width: 2px;
+    border-color: var(--color1);
+    border-style: solid;
+    vertical-align: middle;  
+}
+
+/* the properties of div with the search bar */
+.search_bar_div{
+    float: right;
+    margin: 0.75rem 3em 0.75rem 3rem;
+}
+
 /* the search form styles */
-.src-frm{
+.search_bar_form{
     display: inline-block;   
 }
 
-/* the colour of the plaeholder in the search bar */
-.src-inp::placeholder{
-    color: var(--placeholderclr);
-}
-
-/* what the placeholder does on hover */
-.src-inp::placeholder:hover{
-    color: var(--placeholderclr);
-}
-
 /* the styles of the input box */
-.src-inp{
+.search_bar_input{
     font-size: medium;
-    border-color: var(--color1);
+    border-color: var(--color3);
     border-width: 0.125vw;
     border-top: none;
     border-left: none;
@@ -54,47 +108,94 @@ body{
     padding-left: 1.75rem;
     width: 13vw;
     height: 4vh;
-    color: var(--color1);
+    color: var(--color3);
     outline: none;
     overflow: hidden;
 }
 
-/* the properties of div with the search bar */
-.div3{
-    float: right;
-    margin: 0.75rem 3em 0.75rem 3rem;
+/* the colour of the plaeholder in the search bar */
+.search_bar_input::placeholder{
+    color: var(--color3);
 }
 
+/* what the placeholder does on hover */
+.search_bar_input::placeholder:hover{
+    color: var(--color3);
+}
+
+
+
+
 /* the div with the looping video */
-.div4{ 
+.welcome_div{ 
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    background-color: transparent;  
+    background-image: url(Images/welcome_img.png);
+    background-size: cover;
     margin-bottom: 1rem;
     height: 93.1vh;  
 }
 
-.donbtn{
+/* The property of "Welcome to CozyHomes" title */
+.welcome_p{  
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-size: 280%;
+    font-style: normal;
+    text-align: center;
+    color: var(--color1);
+    margin: 0;
+    padding: 3% 0;  
+}
+
+/* the css properties of the paragraph that comes after the welcome sign */
+.introduction_p{  
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    text-align: center;
+    color: var(--color1);
+    font-size: 180%;
+    margin: 0 0 0 0;
+    padding: 3% 0;  
+}
+
+.donate_button{
     margin: 0 45vw 0 43.5vw;
     width: 10vw;
     font-family: "Nunito", sans-serif;
     text-decoration: none;
-    color: var(--color1);
-    background-color: var(--color3);
+    color: var(--color3);
+    background-color: var(--color1);
     border-radius: 1rem;
     padding: 1rem 2rem;
     font-size: 2.5rem;
 }
 
-.donbtn:hover{
+.donate_button:hover{
     transition: 200ms;
-    background-color: var(--color1);
-    color: var(--color3);
+    background-color: var(--color3);
+    color: var(--color1);
 }
 
+/* the properties of the head 2 element */
+.sub_headers{ 
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: var(--color3);
+    margin: 2%;
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+
+
 /* the container with the news about  the charity */
-.div5{
+.news_div{
     grid-template-rows: 1fr;
 	grid-template-columns: repeat(3, 1fr);
     display: grid;
@@ -105,7 +206,7 @@ body{
 }
 
 /* the div with the photo and the sentence */
-.div5n1, .div5e1{
+.news_images, .div5e1{
     text-align: center;
 }
  
@@ -118,20 +219,13 @@ body{
     height: 94vh;    
 }
 
-.div5i{
-    margin: 2rem 8rem;
-    border-radius: 1rem;
+.impact_div{
     background-color: transparent;
     padding: 0.1rem;  
 }
 
 .div5i1{
-    background-color: transparent;
-    display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 0;
-	height: 50vh;
+    display: flex;
     justify-content: space-evenly;
 }
 
@@ -153,7 +247,7 @@ span{
     position: absolute
 }
 
-#i1{
+/* #i1{
     grid-area: 1/1/2/2;
 	background-color: transparent;
     z-index: -1;
@@ -169,7 +263,7 @@ span{
     grid-area: 1/3/2/4;
 	background-color: transparent;
     z-index: -1;
-}
+} */
 
 /* the properties of the h1 element that labels the divs  */
 .head2p{   
@@ -280,26 +374,7 @@ span{
     
 }
 
-/* the properties of the head 2 element */
-.head2{ 
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    color: var(--color3);
-    margin: 2%;
-    font-size: 250%;
-    text-align: center;
-    padding-bottom: 0;
-}
 
-/* lists used in the navbar */
-.list{
-    text-decoration: none;
-    display: inline;
-    padding: 0;
-    margin: 0 0 0 2%;
-}
 
 /* properties that make up the logo button */
 .logobtn{
@@ -329,48 +404,9 @@ span{
     transform: scale(1.2);
 }
 
-/* property of any image */
-.btn{
-    display: inline-block;
-    list-style: none;
-    margin: 1% 0 0.5% 0.5%; 
-}
-
-/* property of any button when hovered */
-.btn:hover{
-    animation-fill-mode: both;
-    background-color: var(--hoverclr);
-    color: var(--color1);
-    transition: 200ms;
-    transform: scale(1.2);
-}
-
-/* property of any button when active */
-.btn.active{
-    background-color: var(--color1);
-}
 
 /* property of the link element that decides the visual representation for the viewer */
-.link{
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
-    font-size: 112.6%;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    color: var(--color1);
-    width: 6%;
-    background-color: var(--color3);
-    cursor: pointer;
-    transition: 0.2s all;  
-    border-width: 2px;
-    border-color: var(--color3);
-    border-style: solid;
-    vertical-align: middle;  
-}
+
 
 /* the last line of the website to address the audience  */
 .para1{  
@@ -385,30 +421,8 @@ span{
     padding: 1.5rem;
 }
 
-/* The property of "Welcome to CozyHomes" title */
-.para13{  
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-size: 280%;
-    font-style: normal;
-    text-align: center;
-    color: var(--color1);
-    margin: 0;
-    padding: 3% 0;  
-}
 
-/* the css properties of the paragraph that comes after the welcome sign */
-.para131{  
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    text-align: center;
-    color: var(--color1);
-    font-size: 180%;
-    margin: 0 0 0 0;
-    padding: 3% 0;  
-}
+
 
 /* and the property the name of the div that holds the links at the end. */
 .footer{
@@ -442,7 +456,7 @@ span{
     padding-left: 0.7rem;
     width: 10vw;
     height: 3vh;
-    background-color: rgba(219, 203, 189,1);
+    background-color: var(--color1);
     outline: none;
     overflow: hidden;
 }
@@ -458,11 +472,18 @@ span{
     border-radius: 0.8rem;
     width: 4vw;
     height: 3.125vh;
-    background-color: var(--color1);
+    background-color: var(--color3);
     outline: none;
     overflow: hidden;
-    color: var(--color4);
+    color: var(--color1);
+    cursor: pointer;
 }
+
+.sub-btn:hover{
+    background-color: var(--color2);
+    color: var(--color1);
+    transition: 200ms;
+    }
 
 /* the properties of the first div in the footer */
 .ftdiv1{
@@ -504,6 +525,7 @@ span{
     padding: 0;
     width: 8vw;
     border: none;
+    border-radius: 2em;
 }   
 
 /* the properties for the lists in the footer */
@@ -513,7 +535,8 @@ span{
 }
 
 /* the properties for the links in the footer */
-.ftlink{
+.ftlink, .ftlink>a{
+    text-decoration: none;
     font-family: "Nunito", sans-serif;
     display: inline;
     list-style-type: none;

@@ -31,29 +31,219 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fjalla+One&family=Rock+Salt&display=swap" rel="stylesheet">
 
+        <style>
+           
+
+            table{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .login-div{
+                display: flex;
+                flex-direction: column;
+                width: 25vw;
+            }
+
+            .link-div{
+                display: flex;
+                flex-direction: column;
+                background-color: var(--color1);
+                font-family: 'nunito', sans-serif;
+            }
+
+            .login-form{
+                padding: 1rem;
+                border-radius: 0.1rem;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--color3);
+            }
+
+            p{
+                margin: 0;
+            }
+
+            #login_email{
+                color: var(--color4);
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                width: 20vw;
+                font-family: "nunito", sans-serif;
+                border-radius: 0.1rem;
+                border: none;
+            }
+
+            #login_password{
+                color: var(--color4);
+                font-size: 1.5rem;
+                width: 20vw;
+                font-family: "nunito", sans-serif;
+                border-radius: 0.1rem;
+                border: none;
+            }
+
+            #login_email::placeholder{
+                font-size: 1.5rem;
+                font-family: "nunito", sans-serif;
+            }
+
+            #login_password::placeholder{
+                font-size: 1.5rem;
+                font-family: "nunito", sans-serif;
+            }
+
+            #login_submit{
+                font-size: 1.25rem;
+                margin: 1rem 0 1rem 0;
+                font-family: "nunito", sans-serif;
+                color: var(--color4);
+                background-color: var(--color1);
+                border: none;
+                border-radius: 0.1rem;
+                padding: 0.3rem 0.6rem;
+                width: 20.25vw;
+                cursor: pointer;
+            }
+
+            #login_submit:hover{
+                transition: 200ms;
+                color: var(--color1);
+                background-color: var(--color4);
+            }
+
+            .div_head_p{
+                margin: 2rem 0 1rem 0;
+                font-size: 2.25rem;
+                font-family: "nunito", sans-serif;
+                color: var(--color1);
+            }
+
+            button{
+                padding: 0.1rem 0.6rem;
+                font-family: 'nunito', sans-serif;
+                font-size: 1.5rem;
+                border-radius: 0.5rem;
+                border: var(--color4) solid 0.1rem;
+                color: var(--color4);
+                background-color: var(--color1);
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: var(--color4);
+                color: var(--color1);
+                transition: 200ms;
+            }
+
+            .link_p{
+                font-family: 'nunito', sans-serif;
+                font-size: 1.5rem;
+            }
+
+            .link_div{
+                background-color: var(--color1);
+                width: 25vw;
+            }
+
+            .login_logo{
+                background-color: transparent;
+                width: 7vw;
+                margin: 1rem 0;
+            }
+
+            #signup_div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-family: 'Nunito', sans-serif;
+                border-radius: 1rem;
+                margin: 15rem auto 5rem auto;
+                padding: 1rem;
+                width: 48.5vw;
+                background-color: var(--color1); 
+            }
+
+            #signup_form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #signup_table{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                
+            }
+
+            .signup_input{
+                width: 20vw;
+                font-family: 'nunito', sans-serif;
+                font-size: 1.35rem;
+                margin: 0 1.5rem 1.5rem 1.5rem;
+                border: none;
+                border-radius: 0.1rem;
+                color: var(--color4);
+            }
+
+            .signup_label{
+                font-size: 1.35rem;
+                color: var(--color4);
+            }
+
+            #signup_submit_button{
+                font-size: 1.25rem;
+                margin: 1rem 0 1rem 0;
+                font-family: "nunito", sans-serif;
+                color: var(--color4);
+                background-color: var(--color1);
+                border: var(--color4) solid 0.1rem;
+                border-radius: 0.1rem;
+                padding: 0.3rem 0.6rem;
+                width: 20.25vw;
+                cursor: pointer;
+                
+            }
+
+            #signup_submit_button:hover{
+                transition: 200ms;
+                color: var(--color1);
+                background-color: var(--color4);
+            }   
+        </style>
+
+
+
     </head>
-    <body>
+    <body style="background-image: url(Images/login.png);">
 
         <!-- this div contains all the elements for the navigation bar -->
-        <div class="div2">
+        <div class="navigation_bar_div">
                 
             <!-- Created a list to store all the buttons of the navigation bar. -->
-            <ul class="list">
+            <ul class="menu_buttons_list">
 
                 <!-- all of the links and anchor tags used. -->
                 <a class="logobtn" href="index.html"><img class="btnimg" src="Images/logobtn.png" alt="CozyHomes"></button></a>
-                <li class="btn"><a class="link" href="donate.html">Donate</a></li>
-                <li class="btn"><a class="link" href="aboutus.html">About us</a></li>
-                <li class="btn"><a class="link" href="contactus.html">Contact us</a></li>
-                <li class="btn"><a class="link" href="joinus.html">Join us</a></li>
-                <li class="btn"><a class="link" href="login.html">Login</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="aboutus.html">About us</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="contactus.html">Contact us</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="joinus.html">Join us</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="donate.html">Donate</a></li>
+                <li class="menu_button"><a class="menu_button_link" href="login.html">Login</a></li>
 
             </ul>
 
             <!-- created another div for the search bar in the nav pane. -->
-            <div class="div3">
-                <form class="src-frm" action="index.html">
-                    <span class="material-symbols-outlined" style="position: absolute; font-size: larger; padding: 0.4rem 0.3rem 0.1rem 0.2rem; color: #DBCBBD;">search</span><input type="search" class="src-inp" name="src" placeholder="Search...">
+            <div class="search_bar_div">
+                <form class="search_bar_form" action="index.html">
+                    <span class="material-symbols-outlined" style="position: absolute; font-size: larger; padding: 0.4rem 0.3rem 0.1rem 0.2rem; color: var(--color3);">search</span><input type="search" class="search_bar_input" name="src" placeholder="Search...">
                 </form>
             
             </div>
@@ -63,7 +253,98 @@
             </div>
 
                 <h1 class="heads">Login</h1>
-            <div class=""></div>    
+
+            <div class="login-page-div"  style="text-align: center;">
+            <table>
+            <tr>
+                <td style="background-color: var(--color3); border-radius: 0.1rem;">
+                    <div class="login-div">
+                        <form action="/construction.html" class="login-form">
+                            <p class="div_head_p">Login</p>
+                            <img src="Images/logobtn.png" alt="" class="login_logo">
+                            <input type="email" name="login_email" id="login_email" placeholder="Email">
+
+                            <input type="password" name="login_password" id="login_password" placeholder="Password">
+
+                            <input type="submit" name="submit_button" id="login_submit" value="Submit">
+                        </form>
+                    </div>
+                </td>
+                <td style="background-color: var(--color1); border-radius: 0.1rem;">
+                    <div class="link_div">
+                        <p class="link_p">Don't have an account?</p>
+                        <a href="login.html#signup_div" style="text-decoration: none;"><button>Sign Up</button></a>
+                    </div>
+                </td>
+            </tr>
+            </table>
+            </div>
+
+            <div id="signup_div">
+                
+                <form action="/construction.html" id="signup_form">
+
+                    
+                    <p class="div_head_p">Sign Up</p>
+
+                    <table id="signup_table">
+
+                        <tr>
+                            <td>
+                                <label for="first_name_signup" class="signup_label" style="display: flex; flex-direction: column;">First Name</label>
+                                <input type="text" id="first_name_signup" name="first_name_signup" class="signup_input">
+                            </td>
+                            <td>
+                                <label for="dob_signup" class="signup_label" style="display: flex; flex-direction: column;">Date of Birth</label>
+                                <input type="date" id="dob_signup" name="dob_signup" class="signup_input">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="last_name_signup" class="signup_label" style="display: flex; flex-direction: column;">Last Name</label>
+                                <input type="text" id="last_name_signup" name="last_name_signup" class="signup_input">
+                            </td>
+                            <td>
+                                <label for="gender_signup" class="signup_label" style="display: flex; flex-direction: column;">Gender</label>
+                                <input type="text" id="gender_signup" name="gender_signup" class="signup_input">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email_signup" class="signup_label" style="display: flex; flex-direction: column;">Email</label>
+                                <input type="email" id="email_signup" name="email_signup" class="signup_input">
+                            </td>
+                            <td>
+                                <label for="username_signup" class="signup_label" style="display: flex; flex-direction: column;">Username</label>
+                                <input type="text" id="username_signup" name="username_signup" class="signup_input">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="pass_signup" class="signup_label" style="display: flex; flex-direction: column;">Password</label>
+                                <input type="password" id="pass_signup" name="pass_signup" class="signup_input">
+                            </td>
+                            <td>
+                                <label for="con_pass_signup" class="signup_label" style="display: flex; flex-direction: column;">Confirm Password</label>
+                                <input type="password" id="con_pass_signup" name="con_pass_signup" class="signup_input">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" name="signup_submit_button" id="signup_submit_button" value="Sign Up">
+                            </td>
+                        </tr>                        
+
+                    </table>
+                        
+                </form>
+
+            </div>
+                
                 
             
         
@@ -80,9 +361,9 @@
                         <ul class="ftlist">
                             <li class="ftlink2">Legal</li><br>
                             <br>
-                            <li class="ftlink">Terms of Service</li><br>
-                            <li class="ftlink">Privacy Policy</li><br>
-                            <li class="ftlink">Help</li><br>
+                            <li class="ftlink"><a href="construction.html">Terms of Service</a></li><br>
+                            <li class="ftlink"><a href="construction.html">Privacy Policy</a></li><br>
+                            <li class="ftlink"><a href="construction.html">Help</a></li><br>
 
                         </ul>
                     </div>
@@ -91,9 +372,9 @@
                         <ul class="ftlist"> 
                             <li class="ftlink2">Support</li><br>
                             <br>
-                            <li class="ftlink">Volunteer</li><br>
-                            <li class="ftlink">Donate</li><br>
-                            <li class="ftlink">Careers</li><br>
+                            <li class="ftlink"><a href="joinus.html#volunteer-part">Volunteer</a></li><br>
+                            <li class="ftlink"><a href="joinus.html#careers-part">Careers</a></li><br>
+                            <li class="ftlink"><a href="donate.html">Donate</a></li><br>
                         </ul>
                     </div>
 
@@ -101,9 +382,9 @@
                         <ul class="ftlist">
                             <li class="ftlink2">Social</li><br><br>
                             
-                            <li class="ftlink">Instagram</li><br>
-                            <li class="ftlink">Facebook</li><br>
-                            <li class="ftlink">X(Twitter)</li><br>
+                            <li class="ftlink"><a href="https://instagram.com">Instagram</a></li><br>
+                            <li class="ftlink"><a href="https://facebook.com">Facebook</a></li><br>
+                            <li class="ftlink"><a href="https://x.com">X(Twitter)</a></li><br>
                             
 
                         </ul>
